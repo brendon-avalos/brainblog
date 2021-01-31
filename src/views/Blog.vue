@@ -102,4 +102,12 @@ p {
 
   }
 }
+
+@media only screen and (max-width: 600px) {
+   .blog {
+    width:100%;
+    min-height:50vh;
+    position: relative;
+  }
+}
 </style>

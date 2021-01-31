@@ -53,5 +53,18 @@
       letter-spacing: 3rem;
     word-break: break-all;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+   .intro-top {
+    width:100%;
+    height:30vh;
+    position: relative;
+  }
+}
+
+
+
 </style>
 

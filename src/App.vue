@@ -3,10 +3,11 @@
   <div id="app">
     <div>
      <intro/>
-      <draw/>
+     
 
 
       <router-view/>
+       <draw/>
     </div>
   </div>
 
