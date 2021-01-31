@@ -2,9 +2,10 @@
   <div class="home">
 
     <div class="sections">
+     
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-       
-      
+        <div class="title">latest exercises</div>
+        
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry">
             <h3 @click="$router.push({name: entry.id})">
@@ -115,7 +116,7 @@ p {
 
 
 .title{
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .group {
@@ -124,15 +125,6 @@ p {
 }
 
 
-.about {
-  letter-spacing:0;
-
-}
-
-.about-title {
-  margin-bottom:2rem;
-}
-
 
 @media only screen and (max-width: 600px) {
    .home {
@@ -140,10 +132,11 @@ p {
     min-height:50vh;
     position: relative;
     margin-top:50vh;
+   
 
   }
 
-h3 {
+  h3 {
   font-size:.9rem;
   }
 
@@ -152,6 +145,10 @@ h3 {
     font-size: .9rem;
     font-weight: 500;
   }
+
+  .title{
+  font-size:.9rem;
+} 
 
 }
 
