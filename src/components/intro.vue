@@ -62,7 +62,10 @@
     height:50vh;
     position: fixed;
     z-index: -100;
+       font-size: .9rem;
   }
+
+
 }
 
 

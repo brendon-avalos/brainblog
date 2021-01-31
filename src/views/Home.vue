@@ -78,7 +78,7 @@ h2 {
   font-size:1rem;
   letter-spacing: 0rem;
   margin-bottom: 2rem;
-  font-weight:300;
+  font-weight:500;
 }
 
 h3 {
@@ -140,7 +140,19 @@ p {
     min-height:50vh;
     position: relative;
     margin-top:50vh;
+
   }
+
+h3 {
+  font-size:.9rem;
+  }
+
+  .date {
+    opacity:1;
+    font-size: .9rem;
+    font-weight: 500;
+  }
+
 }
 
 

@@ -108,8 +108,31 @@ p {
     width:100%;
     min-height:50vh;
     position: relative;
+
+
+    .back {
+      font-size:.9rem;
+    }
     
      /deep/ {
+
+
+      p {
+  font-size:.9rem;
+  
+    } 
+
+    h1 {
+
+    font-size:.9rem;
+  
+
+    }
+    h4 {
+  
+    font-size: .9rem;
+ 
+    }
 
     pre {
       font-style: italic;
