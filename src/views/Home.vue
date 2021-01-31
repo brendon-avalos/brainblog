@@ -139,6 +139,7 @@ p {
     width:100%;
     min-height:50vh;
     position: relative;
+    margin-top:50vh;
   }
 }
 

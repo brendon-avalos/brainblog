@@ -59,8 +59,9 @@
 @media only screen and (max-width: 600px) {
    .intro-top {
     width:100%;
-    height:30vh;
-    position: relative;
+    height:50vh;
+    position: fixed;
+    z-index: -100;
   }
 }
 
