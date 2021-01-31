@@ -95,7 +95,7 @@ a:active {
   }
 
   .tool {
-  display:inline;
+  display:none;
   padding-left:1.5rem;
 }
 }
