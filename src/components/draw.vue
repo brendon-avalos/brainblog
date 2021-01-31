@@ -1,15 +1,24 @@
 <template>
  <div class="drawing-canvas">
 
-      <div class="draw">*free space*</div>
-      <canvas id="simple_sketch" width="1000" height="1000"></canvas>
+      <div class="draw-instructions">relax, make a drawing </div>
+      <div class="tools">
+        <div class="tool"><a href="#tools_sketch" data-tool="marker">draw</a></div>
+       <div class="tool"><a href="#tools_sketch" data-tool="eraser">erase</a></div>
+   
+      
+      </div>
+     
+
+      <canvas id="tools_sketch" width="1000" height="1000"></canvas>
 
    </div>
 </template>
 
 <script>
 	$(function() {
-    $('#simple_sketch').sketch();
+  
+    $('#tools_sketch').sketch({defaultColor: "#000"});
   });
 </script>
 
@@ -17,16 +26,52 @@
 
 
 <style scoped>
-.draw {
+.draw-instructions {
 
   padding:1rem;
   position:absolute;
   bottom:0;
-  color:gray; }
+   }
 
+.tool {
+  display:inline;
+  padding-left:3rem;
+}
+
+
+
+.tools {
+  padding:1rem;
+  position:absolute;
+  bottom:0;
+  text-decoration: none;
+  color:black;
+  right:0;
+
+
+}
+
+a:link {
+  text-decoration: none;
+  color:black;
+
+}
+
+
+a:visited {
+  text-decoration: none;
+  color:black;
+
+}
+
+a:active {
+  text-decoration: none;
+  color:gray;
+
+}
 
 .drawing-canvas {
-  cursor: url('../assets/pencil.png') 0 50, pointer ;
+  cursor: url('../assets/pencil.png') 0 50, pointer;
   width:50%;
   bottom:0;
   height:50vh;

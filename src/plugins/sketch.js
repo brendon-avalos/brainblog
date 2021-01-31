@@ -164,10 +164,13 @@ var __slice = Array.prototype.slice;
     }
   };
   return $.sketch.tools.eraser = {
+
     onEvent: function(e) {
       return $.sketch.tools.marker.onEvent.call(this, e);
+
     },
     draw: function(action) {
+       console.log("i hit this shit");
       var oldcomposite;
       oldcomposite = this.context.globalCompositeOperation;
       this.context.globalCompositeOperation = "copy";

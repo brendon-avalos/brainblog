@@ -8,6 +8,8 @@
 </template>
 <style scoped>
    .intro-top {
+
+  cursor: url('../assets/book.png') 0 50, pointer;
   width:50%;
   height:50vh;
   position:fixed;

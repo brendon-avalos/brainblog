@@ -48,8 +48,10 @@ export default {
 
 .home {
   width:50%;
+  
   float:right;
    background-color:#FFE6CE;
+
 
 
 }

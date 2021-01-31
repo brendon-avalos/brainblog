@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .blog {
- 
+  
    width:50%;
    float:right;
    background-color:#FFE6CE;
