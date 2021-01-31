@@ -3,10 +3,18 @@
 
     <div class="intro-top">
       <div class="name">free exercise</div>
-      <div class="about">(1)free exercise is a space for open anonymous writing exercises. (2) it was created in effort to get better at the act of writing. (3) everyone is invited. you can find out how to add your own post here.</div>
+      <div class="about">(1) free exercise is a space for open anonymous writing exercises. (2) it was created in effort to get better at the act of writing. (3) everyone is invited. you can post using simple markup.</div>
 
     </div>
      <div class="intro-bottom">
+
+      <div class="draw">draw here</div>
+      <canvas id="simple_sketch" width="1000" height="1000"></canvas>
+
+       <div class="sketch">draw</div>
+      <canvas id="simple_sketch" width="2000px" height="2000px"></canvas>
+
+
 
 
     </div>
@@ -32,6 +40,13 @@
 </template>
 
 <script>
+
+
+$(function() {
+
+    $('#simple_sketch').sketch();
+  });
+
 import BLOGENTRIES from '@/statics/data/blogs.json'
 
 
@@ -63,7 +78,19 @@ export default {
 }
 
 
-.name {
+
+.draw {
+  padding:1rem;
+  position:absolute;
+  bottom:0;
+  color:gray; }
+
+.sketch {
+  padding:1rem;
+  color:gray;
+   position: absolute;
+  bottom: 0px;
+
 
 
 }
@@ -77,8 +104,13 @@ export default {
   left:0;
   font-size:1rem;
   background-color:#ffffff;
-  padding:1rem;
+
+  box-sizing: border-box; 
+  overflow: hidden; 
+
+
   box-sizing: border-box;  
+  overflow: hidden;
 
 }
 
