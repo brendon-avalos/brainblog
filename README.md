@@ -1,4 +1,4 @@
-testing
+
 
 # free exercise
 
@@ -10,7 +10,7 @@ https://free-exercise.netlify.app/
 
 
 
-## Project setup
+### Project setup
 ```
 yarn install
 ```
