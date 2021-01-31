@@ -5,13 +5,9 @@
 
 I wanted to make a blog to learn what the hell vue was so I found this simple markdown blog from Joseph Harvey Angeles. Thanks Joseph!
 
-
-# Joseph's original app
-https://github.com/vycoder/vue-markdown-blog
-
-
-# Live demo to my blog
 https://free-exercise.netlify.app/
+
+
 
 
 
@@ -34,5 +30,9 @@ yarn run build
 ```
 yarn run lint
 ```
+
+### Joseph's original app
+https://github.com/vycoder/vue-markdown-blog
+
 
 
