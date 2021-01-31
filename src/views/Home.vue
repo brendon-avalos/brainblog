@@ -166,8 +166,8 @@ h3 {
   .date {
     opacity:1;
     font-size: 1rem;
-    margin-top: .4rem;
     font-weight: 300;
+    text-transform: lowercase;
   }
 
 p {
