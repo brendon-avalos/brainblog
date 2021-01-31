@@ -91,9 +91,13 @@ a:active {
 @media only screen and (max-width: 600px) {
    .drawing-canvas {
     width:100%;
-
     position: relative;
   }
+
+  .tool {
+  display:inline;
+  padding-left:1.5rem;
+}
 }
 
 </style>

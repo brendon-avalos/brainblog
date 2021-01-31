@@ -108,6 +108,25 @@ p {
     width:100%;
     min-height:50vh;
     position: relative;
+    
+     /deep/ {
+
+    pre {
+      font-style: italic;
+      display: block;
+      font-size:1.25rem;
+      width:100%;
+      margin-top:.5rem;
+      padding:0rem 0rem;
+      white-space: normal; 
+      height:auto;
+      line-height: 1;
+      text-transform: lowercase;
+      
+
+    }
+  }
+   
   }
 }
 </style>
