@@ -50,7 +50,7 @@ export default {
   width:50%;
   float:right;
    background-color:#FFE6CE;
-  height:100vh;
+
 
 }
 
