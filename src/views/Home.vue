@@ -1,17 +1,19 @@
 <template>
   <div class="home">
-    <h1 class="headline center">v-m-blog</h1>
-    <img alt="Vue logo" src="../assets/logo.png">
+    <div class="intro"></div>
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <h2 class="center">{{section}}</h2>
+        <div class="title"><h2 class="left">{{section}}</h2></div>
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry">
             <h3 @click="$router.push({name: entry.id})">
               {{entry.title}}
-              <span class="subtitle">{{entry.date}}</span>
-            </h3>
-            <p>{{entry.description}}</p>
+          </h3>
+          <div class="date">{{entry.date}}</div>
+          <div class="meta-data">
+          <div class="tags">{{entry.tags}}</div>
+          <div class="author">{{entry.author}}</div>
+        </div>
           </div>
         </div>
       </div>
@@ -32,13 +34,31 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.center {
-  text-align: center;
+
+.intro {
+  width:50%;
+  position:fixed;
+}
+
+.home {
+  width:50%;
+  float:right;
+  margin-left:2rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.75);
+  height:100vh;
+
+}
+
+
+.left {
+  text-align: left;
 }
 .headline {
-  text-transform: uppercase;
-  margin: 4rem auto;
-  font-size: 4rem;
+ 
+  text-transform: titlecase;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  line-height:80%;
 }
 img {
   display: block;
@@ -47,41 +67,52 @@ img {
 }
 
 h2 {
-  color: #35495e;
+  color: black;
+  font-size:1rem;
   text-transform: capitalize;
   margin-bottom: 2rem;
+  font-weight:300;
 }
 
 h3 {
-  color: #42b883;
-  margin-bottom: 0;
+  color: black;
+  font-size:1rem;
+  font-weight: 500;
   cursor: pointer;
+  margin:0;
+  text-transform: uppercase;
+
+ 
   &:hover {
-    text-decoration: underline;
+    opacity:.5;
   }
-  .subtitle {
-    color: grey;
-    font-size: .98rem;
-    float: right;
-    font-weight: normal;
+
   }
-}
+
+  .date {
+    opacity:1;
+    font-size: 1rem;
+    margin-top: .4rem;
+    font-weight: 300;
+  }
 
 p {
   margin-top: .4rem;
 }
 
-.sections {
-  max-width: 40vw;
-  margin: 0 auto;
-  margin-top: 4rem;
-}
+
 
 .section {
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
+}
+
+
+.title{
+  margin-bottom: 6rem;
 }
 
 .group {
+  padding-left:1rem;
   margin-bottom: 4rem;
 }
 
