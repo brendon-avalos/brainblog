@@ -1,7 +1,6 @@
-
+testing
 
 # free exercise
-
 
 I wanted to make a blog to learn what the hell vue was so I found this simple markdown blog from Joseph Harvey Angeles. Thanks Joseph!
 
