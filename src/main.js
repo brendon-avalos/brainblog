@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import sketch from '../src/plugins/sketch.min.js'
+import sketch from '../src/plugins/sketch.js'
 
 Vue.config.productionTip = false
 

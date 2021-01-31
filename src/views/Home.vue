@@ -7,7 +7,8 @@
 
     </div>
      <div class="intro-bottom">
-
+      <div class="draw">draw here</div>
+      <canvas id="simple_sketch" width="1000" height="1000"></canvas>
 
     </div>
     <div class="sections">
@@ -32,6 +33,11 @@
 </template>
 
 <script>
+
+ $(function() {
+    $('#simple_sketch').sketch();
+  });
+
 import BLOGENTRIES from '@/statics/data/blogs.json'
 
 
@@ -63,8 +69,11 @@ export default {
 }
 
 
-.name {
-
+.draw {
+  padding:1rem;
+  position:absolute;
+  bottom:0;
+  color:gray;
 
 }
 
@@ -77,8 +86,8 @@ export default {
   left:0;
   font-size:1rem;
   background-color:#ffffff;
-  padding:1rem;
-  box-sizing: border-box;  
+  box-sizing: border-box; 
+  overflow: hidden; 
 
 }
 
