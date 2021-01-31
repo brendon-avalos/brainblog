@@ -37,6 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .blog {
+ 
    width:50%;
    float:right;
    background-color:#FFE6CE;
@@ -83,14 +84,15 @@ p {
 
     }
     pre {
-        font-style: italic;
+      font-style: italic;
       display: inline-block;
       font-size:1.5rem;
-      width:50%;
-      float:right;
+      width:40%;
+      padding:1rem 2rem;
+      float:left;
       white-space: normal; 
       height:auto;
-      line-height: .8;
+      line-height: 1;
       text-transform: lowercase;
       
 

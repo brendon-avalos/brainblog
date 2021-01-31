@@ -1,7 +1,7 @@
 <template>
- <div class="intro-bottom">
+ <div class="drawing-canvas">
 
-      <div class="draw">draw here</div>
+      <div class="draw">*free space*</div>
       <canvas id="simple_sketch" width="1000" height="1000"></canvas>
 
    </div>
@@ -18,13 +18,15 @@
 
 <style scoped>
 .draw {
+
   padding:1rem;
   position:absolute;
   bottom:0;
   color:gray; }
 
 
-.intro-bottom {
+.drawing-canvas {
+  cursor: url('../assets/pencil.png') 0 50, pointer ;
   width:50%;
   bottom:0;
   height:50vh;
@@ -32,13 +34,9 @@
   left:0;
   font-size:1rem;
   background-color:#fff;
-
   box-sizing: border-box; 
   overflow: hidden; 
 
-
-  box-sizing: border-box;  
-  overflow: hidden;
 
 }
 </style>

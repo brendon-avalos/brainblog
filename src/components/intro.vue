@@ -2,7 +2,7 @@
 <template> 
     <div class="intro-top">
       <div class="name">free exercise</div>
-      <div class="about">(1) free exercise is a space for open anonymous writing exercises. (2) it was created in effort to get better at the act of writing. (3) everyone is invited. you can find out how to add your own post here.</div>
+      <div class="about">(1) free exercise is a space for open anonymous writing exercises. (2) it was created in effort to improve my writing skills. (3) let me know if you would like to participate. contact me at avalos.brendon@gmail.com</div>
 
     </div>
 </template>
