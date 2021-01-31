@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 600px) {
  #app {
-  line-height:130%;
+  line-height:160%;
  }
 
 }
