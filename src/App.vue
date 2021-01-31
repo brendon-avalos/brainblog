@@ -23,10 +23,18 @@
   color: black;
   max-width: 100vw;
   margin: 0 auto;
-  font-size:1rem;  
+  font-size:1rem; 
+  line-height:130%;
 }
 
 
+
+@media only screen and (max-width: 600px) {
+ #app {
+  line-height:130%;
+ }
+
+}
 
 
 

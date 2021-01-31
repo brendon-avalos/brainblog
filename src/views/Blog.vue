@@ -93,7 +93,7 @@ p {
       float:left;
       white-space: normal; 
       height:auto;
-      line-height: 1;
+      line-height: 1.25;
       text-transform: lowercase;
       
 
@@ -137,13 +137,13 @@ p {
     pre {
       font-style: italic;
       display: block;
-      font-size:1.25rem;
+      font-size:1.1rem;
       width:50%;
-      margin-top:.5rem;
-      padding:0rem 0rem;
+      margin:0;
+      padding-left: 0rem;
       white-space: normal; 
       height:auto;
-      line-height: 1.2;
+      line-height: 1.3;
       text-transform: lowercase;
       
 
