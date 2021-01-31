@@ -2,6 +2,10 @@
 
   <div id="app">
     <div>
+     <intro/>
+      <draw/>
+
+
       <router-view/>
     </div>
   </div>

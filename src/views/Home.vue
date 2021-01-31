@@ -1,23 +1,6 @@
 <template>
   <div class="home">
 
-    <div class="intro-top">
-      <div class="name">free exercise</div>
-      <div class="about">(1) free exercise is a space for open anonymous writing exercises. (2) it was created in effort to get better at the act of writing. (3) everyone is invited. you can post using simple markup.</div>
-
-    </div>
-     <div class="intro-bottom">
-
-      <div class="draw">draw here</div>
-      <canvas id="simple_sketch" width="1000" height="1000"></canvas>
-
-       <div class="sketch">draw</div>
-      <canvas id="simple_sketch" width="2000px" height="2000px"></canvas>
-
-
-
-
-    </div>
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
        
@@ -28,9 +11,7 @@
               {{entry.title}}
           </h3>
           <div class="date">{{entry.date}}</div>
-          <div class="meta-data">
-          <div class="tags">{{entry.tags}}</div>
-          <div class="author">{{entry.author}}</div>
+   
         </div>
           </div>
         </div>
@@ -42,10 +23,7 @@
 <script>
 
 
-$(function() {
 
-    $('#simple_sketch').sketch();
-  });
 
 import BLOGENTRIES from '@/statics/data/blogs.json'
 
@@ -61,64 +39,17 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-.intro-top {
-  width:50%;
-  height:50vh;
-  position:fixed;
-  letter-spacing: 4rem;
-  left:0;
-  top:0;
-  font-size:1rem;
-  background-color:#FFCFA3;
-  padding:1rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content:space-between;
-}
 
 
 
-.draw {
-  padding:1rem;
-  position:absolute;
-  bottom:0;
-  color:gray; }
-
-.sketch {
-  padding:1rem;
-  color:gray;
-   position: absolute;
-  bottom: 0px;
 
 
 
-}
-
-
-.intro-bottom {
-  width:50%;
-  bottom:0;
-  height:50vh;
-  position:fixed;
-  left:0;
-  font-size:1rem;
-  background-color:#ffffff;
-
-  box-sizing: border-box; 
-  overflow: hidden; 
-
-
-  box-sizing: border-box;  
-  overflow: hidden;
-
-}
 
 .home {
   width:50%;
   float:right;
    background-color:#FFE6CE;
- 
   height:100vh;
 
 }
