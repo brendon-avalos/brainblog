@@ -115,12 +115,12 @@ p {
       font-style: italic;
       display: block;
       font-size:1.25rem;
-      width:100%;
+      width:50%;
       margin-top:.5rem;
       padding:0rem 0rem;
       white-space: normal; 
       height:auto;
-      line-height: 1;
+      line-height: 1.2;
       text-transform: lowercase;
       
 
