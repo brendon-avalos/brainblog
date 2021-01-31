@@ -24,7 +24,7 @@
   max-width: 100vw;
   margin: 0 auto;
   font-size:1rem; 
-  line-height:130%;
+  line-height:150%;
 }
 
 
