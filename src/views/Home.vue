@@ -1,9 +1,19 @@
 <template>
   <div class="home">
-    <div class="intro"></div>
+
+    <div class="intro-top">
+      <div class="name">free exercise</div>
+      <div class="about">(1)free exercise is a space for open anonymous writing exercises. (2) it was created in effort to get better at the act of writing. (3) everyone is invited. you can find out how to add your own post here.</div>
+
+    </div>
+     <div class="intro-bottom">
+
+
+    </div>
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <div class="title"><h2 class="left">{{section}}</h2></div>
+       
+      
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry">
             <h3 @click="$router.push({name: entry.id})">
@@ -24,6 +34,7 @@
 <script>
 import BLOGENTRIES from '@/statics/data/blogs.json'
 
+
 export default {
   name: 'home',
   computed: {
@@ -35,16 +46,47 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-.intro {
+.intro-top {
   width:50%;
+  height:50vh;
   position:fixed;
+  letter-spacing: 4rem;
+  left:0;
+  top:0;
+  font-size:1rem;
+  background-color:#FFCFA3;
+  padding:1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:space-between;
+}
+
+
+.name {
+
+
+}
+
+
+.intro-bottom {
+  width:50%;
+  bottom:0;
+  height:50vh;
+  position:fixed;
+  left:0;
+  font-size:1rem;
+  background-color:#ffffff;
+  padding:1rem;
+  box-sizing: border-box;  
+
 }
 
 .home {
   width:50%;
   float:right;
-  margin-left:2rem;
-  border-left: 1px solid rgba(0, 0, 0, 0.75);
+   background-color:#FFE6CE;
+ 
   height:100vh;
 
 }
@@ -69,7 +111,7 @@ img {
 h2 {
   color: black;
   font-size:1rem;
-  text-transform: capitalize;
+  letter-spacing: 0rem;
   margin-bottom: 2rem;
   font-weight:300;
 }
@@ -112,8 +154,18 @@ p {
 }
 
 .group {
-  padding-left:1rem;
-  margin-bottom: 4rem;
+  padding:1rem;
+
+}
+
+
+.about {
+  letter-spacing:0;
+
+}
+
+.about-title {
+  margin-bottom:2rem;
 }
 
 </style>
