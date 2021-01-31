@@ -49,7 +49,7 @@ export default {
   .back {
     background-color: #transparent;
     color: black;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     text-decoration: none;
     font-size:1rem;
     display: inline-block;
