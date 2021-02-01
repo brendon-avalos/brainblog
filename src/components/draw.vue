@@ -1,7 +1,7 @@
 <template>
  <div class="drawing-canvas">
 
-      <div class="draw-instructions">relax, make a drawing </div>
+      <div class="draw-instructions">a drawing exercise</div>
       <div class="tools">
         <div class="tool"><a href="#tools_sketch" data-tool="marker">draw</a></div>
        <div class="tool"><a href="#tools_sketch" data-tool="eraser">erase</a></div>

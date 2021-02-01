@@ -6,7 +6,7 @@
       free <br>exercise
      
       </div>
-      <div class="about">(1) free exercise is a space for open anonymous writing exercises. (2) it was created in effort to improve my writing skills. (3) let me know if you would like to participate. contact me at avalos.brendon@gmail.com</div>
+      <div class="about">(1) free exercise is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) this space is open to anyone that wants to publsih here. (4) to publish here contact me at avalos.brendon@gmail.com.</div>
 
     </div>
 </template>

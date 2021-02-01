@@ -1,15 +1,17 @@
 <template>
 
   <div class="blog">
-
-      <router-link to="/" tag="a" class="back">< back</router-link>
+      
+      <router-link to="/" tag="a" class="back">< index</router-link>
+      <div class="fakeback">< idsadslkajdjklsax</div>
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
       <div class="section" v-for="entry in entries[section]" :key="entry.id">
+
 
       </div>
       </div>
       <router-view />
-  
+       
   </div>
 </template>
 
@@ -40,20 +42,33 @@ export default {
   
    width:50%;
    float:right;
-   background-color:#FFE6CE;
+   background-color:#EEE;
    padding:1rem;
    overflow-x: hidden;
   box-sizing: border-box; 
 
 
-  .back {
-    background-color: #transparent;
+.fakeback {
+    position:relative;
     color: black;
     margin-bottom: 3rem;
     text-decoration: none;
     font-size:1rem;
     display: inline-block;
+    visibility: hidden;
     transition: all .3s ease;
+}
+
+  .back {
+    position:fixed;
+    background-color: #EEE;
+    color: black;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    font-size:1rem;
+    transition: all .3s ease;
+    width:100%;
+    height:50px;
     &:hover {
       background-color: transparent;
       color: gray;
