@@ -5,7 +5,7 @@
      
      
 
-      <canvas id="tools_sketch" width="1000" height="1000"></canvas>
+      <canvas id="tools_sketch" width="1500" height="1500"></canvas>
 
    </div>
 </template>
