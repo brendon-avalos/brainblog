@@ -45,7 +45,8 @@ export default {
    background-color:#EEE;
    padding:1rem;
    overflow-x: hidden;
-  box-sizing: border-box; 
+   min-height:100vh;
+    box-sizing: border-box; 
 
 
 .fakeback {
@@ -86,6 +87,16 @@ p {
       margin-block-start: 2em;
     margin-block-end: 0em;
   
+}
+
+ul {
+  font-size:1rem;
+  padding-inline-start: 1rem;
+}
+
+ol {
+  font-size:1rem;
+  padding-inline-start: 2rem;
 }
 
     h1 {
@@ -143,6 +154,14 @@ p {
   font-size:.9rem;
   
     } 
+    ul {
+  font-size:.9rem;
+  padding-inline-start: 1rem;
+}
+ol {
+  font-size:.9rem;
+  padding-inline-start: 2rem;
+}
 
     h1 {
 
