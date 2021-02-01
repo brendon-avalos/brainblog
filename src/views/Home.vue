@@ -117,6 +117,7 @@ p {
 
 .title{
   margin-bottom: 3rem;
+  font-size:1rem;
 }
 
 .group {
