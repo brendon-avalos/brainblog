@@ -54,16 +54,19 @@
 .free {
   letter-spacing: 3rem;
   word-break: break-all;
+    border: 1px solid transparent;
 }
 
 
 .free:hover{
   letter-spacing: 1rem;
+   border: 1px solid black;
 }
 
 .exercise{
   letter-spacing: 3rem;
   word-break: break-all;
+    border: 1px solid transparent;
 
 }
 
@@ -71,6 +74,7 @@
 
 .exercise:hover{
   letter-spacing: 1rem;
+   border: 1px solid black;
 
   
 }

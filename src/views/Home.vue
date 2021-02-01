@@ -89,11 +89,15 @@ h3 {
   cursor: pointer;
   margin:0;
   text-transform: uppercase;
+  border: 1px solid transparent;
+
 
 
  
   &:hover {
     letter-spacing: .5rem;
+       border: 1px solid black;
+       box-sizing:border-box;
   }
 
   }
@@ -112,12 +116,12 @@ p {
 
 
 .section {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 
 .title{
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   font-size:1rem;
 }
 

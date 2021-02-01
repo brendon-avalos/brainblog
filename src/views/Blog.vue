@@ -52,7 +52,7 @@ export default {
 .fakeback {
     position:relative;
     color: black;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     text-decoration: none;
     font-size:1rem;
     display: inline-block;
@@ -70,13 +70,16 @@ export default {
   .back {
     position:fixed;
     color: black;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     text-decoration: none;
+    width:25%;
     font-size:1rem;
+    border: 1px solid transparent;
    
  
     &:hover {
      letter-spacing: .5rem;
+       border: 1px solid black;
     
     }
   }
@@ -113,21 +116,23 @@ ol {
     font-size: 1rem;
     font-weight: 300;
     text-transform: lowercase;
-    margin-bottom:3rem;
+    margin-bottom:5rem;
     margin-top:0rem;
 
     }
     pre {
       font-style: italic;
       display: inline-block;
-      font-size:1.5rem;
+      font-size:1.25rem;
       width:40%;
-      padding:1rem 2rem;
-      float:left;
+      padding:2rem 1rem;
+      margin:1.5rem;
+      float:right;
       white-space: normal; 
       height:auto;
       line-height: 1.25;
       text-transform: lowercase;
+      border: 1px solid black;
       
 
 
@@ -180,8 +185,8 @@ ol {
       display: block;
       font-size:1.1rem;
       width:50%;
-      margin:0;
-      padding-left: 0rem;
+      margin:1rem;
+      padding-left: 1rem;
       white-space: normal; 
       height:auto;
       line-height: 1.3;
