@@ -73,11 +73,11 @@ export default {
     margin-bottom: 3rem;
     text-decoration: none;
     font-size:1rem;
-    transition: all .3s ease;
+   
  
     &:hover {
-      background-color: transparent;
-      color: gray;
+     letter-spacing: .5rem;
+    
     }
   }
   /deep/ {
@@ -103,7 +103,7 @@ ol {
     color: black;
     font-size:1rem;
     font-weight: 500;
-    cursor: pointer;
+
     margin:0;
     text-transform: uppercase;
 

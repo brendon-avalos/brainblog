@@ -3,24 +3,24 @@
     <div class="intro-top">
       <div class="name">
 
-      free <br>exercise
+      <div class="free">free</div><div class="exercise">exercise</div>
      
       </div>
-      <div class="about">(1) free exercise is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) this space is open to anyone that wants to publsih here. (4) reach out if you want to write something avalos.brendon@gmail.com.</div>
+      <div class="about">(1) free exercise is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) this space is open to anyone that wants to publsih here. (4) reach out if you want to write avalos.brendon@gmail.com.</div>
 
     </div>
 </template>
 <style scoped>
    .intro-top {
 
-  cursor: url('../assets/book.png') 0 50, pointer;
+  cursor: url('../assets/book.png') 0 50, auto;
   width:50%;
   height:50vh;
   position:fixed;
   left:0;
   top:0;
   font-size:1rem;
-  background-color:#CED9FF;
+  background-color:#E7E8D9;
   padding:1rem;
   box-sizing: border-box;
   display: flex;
@@ -49,9 +49,30 @@
 
 }
 
-.name {
-      letter-spacing: 3rem;
-    word-break: break-all;
+
+
+.free {
+  letter-spacing: 3rem;
+  word-break: break-all;
+}
+
+
+.free:hover{
+  letter-spacing: 1rem;
+}
+
+.exercise{
+  letter-spacing: 3rem;
+  word-break: break-all;
+
+}
+
+
+
+.exercise:hover{
+  letter-spacing: 1rem;
+
+  
 }
 
 

@@ -9,9 +9,9 @@
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry">
             <h3 @click="$router.push({name: entry.id})">
-              {{entry.title}}
+              {{entry.title}}   <div class="date">{{entry.date}}</div>
           </h3>
-          <div class="date">{{entry.date}}</div>
+        
    
         </div>
           </div>
@@ -51,7 +51,7 @@ export default {
   width:50%;
   
   float:right;
-   background-color:#FFE6CE;
+   background-color:#D7D9BF;
 
 
 
@@ -90,9 +90,10 @@ h3 {
   margin:0;
   text-transform: uppercase;
 
+
  
   &:hover {
-    opacity:.5;
+    letter-spacing: .5rem;
   }
 
   }

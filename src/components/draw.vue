@@ -73,7 +73,7 @@ a:active {
   position:fixed;
   left:0;
   font-size:1rem;
-  background-color:#fff;
+  background-color:#FBFBF6;
   box-sizing: border-box; 
   overflow: hidden; 
 
