@@ -1,7 +1,7 @@
 <template>
 
   <div class="blog">
-      
+      <div class="back-background"></div>
       <router-link to="/" tag="a" class="back">< index</router-link>
       <div class="fakeback">< idsadslkajdjklsax</div>
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
@@ -59,16 +59,21 @@ export default {
     transition: all .3s ease;
 }
 
+.back-background {
+    position:fixed;
+       width:100%;
+    height:3rem;
+    top:0;
+     background-color: #EEE;
+}
   .back {
     position:fixed;
-    background-color: #EEE;
     color: black;
     margin-bottom: 3rem;
     text-decoration: none;
     font-size:1rem;
     transition: all .3s ease;
-    width:100%;
-    height:50px;
+ 
     &:hover {
       background-color: transparent;
       color: gray;
@@ -78,6 +83,8 @@ export default {
 
 p {
   font-size:1rem;
+      margin-block-start: 2em;
+    margin-block-end: 0em;
   
 }
 
