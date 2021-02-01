@@ -1,13 +1,8 @@
 <template>
  <div class="drawing-canvas">
 
-      <div class="draw-instructions">a drawing exercise</div>
-      <div class="tools">
-        <div class="tool"><a href="#tools_sketch" data-tool="marker">draw</a></div>
-       <div class="tool"><a href="#tools_sketch" data-tool="eraser">erase</a></div>
-   
-      
-      </div>
+      <div class="draw-instructions">a countour exercise</div>
+     
      
 
       <canvas id="tools_sketch" width="1000" height="1000"></canvas>
