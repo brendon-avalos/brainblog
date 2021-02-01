@@ -125,7 +125,7 @@ ol {
       display: inline-block;
       font-size:1.25rem;
       width:40%;
-      padding:2rem 1rem;
+      padding:1rem 1rem;
       margin:1.5rem;
       float:right;
       white-space: normal; 
