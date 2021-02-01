@@ -6,8 +6,7 @@
       <div class="free">free</div><div class="exercise">exercise</div>
      
       </div>
-      <div class="about">(1) free exercise is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) this space is open to anyone that wants to publsih here. (4) reach out if you want to write avalos.brendon@gmail.com.</div>
-
+      <div class="about">(1) free exercise is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) get in touch if you would like to contribute or publish on this space as well. avalos.brendon@gmail.com
     </div>
 </template>
 <style scoped>
