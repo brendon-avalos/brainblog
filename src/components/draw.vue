@@ -1,4 +1,4 @@
-<template>
+8template>
  <div class="drawing-canvas">
 
       <div class="draw-instructions">a countour line exercise</div>
@@ -87,7 +87,7 @@ a:active {
    .drawing-canvas {
     width:100%;
     position: relative;
-       font-size: .9rem;
+       font-size: .8rem;
   }
 
   .tool {

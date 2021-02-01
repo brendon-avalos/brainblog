@@ -17,7 +17,7 @@
 
 
 #app {
-  font-family: monospace;
+  font-family: 'Courier Prime',monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
