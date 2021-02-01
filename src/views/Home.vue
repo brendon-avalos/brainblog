@@ -88,6 +88,7 @@ h3 {
   font-weight: 500;
   cursor: pointer;
   margin:0;
+  letter-spacing: .01rem;
   text-transform: uppercase;
   border: 1px solid transparent;
 

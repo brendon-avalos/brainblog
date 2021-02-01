@@ -106,7 +106,7 @@ ol {
     color: black;
     font-size:1rem;
     font-weight: 500;
-
+    letter-spacing: .01rem;
     margin:0;
     text-transform: uppercase;
 
