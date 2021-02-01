@@ -143,17 +143,17 @@ p {
   }
 
   h3 {
-  font-size:.8rem;
+  font-size:.85rem;
   }
 
   .date {
     opacity:1;
-    font-size: .8rem;
+    font-size: .85rem;
     font-weight: 500;
   }
 
   .title{
-  font-size:.8rem;
+  font-size:.85rem;
 } 
 
 }

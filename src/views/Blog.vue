@@ -1,4 +1,4 @@
-8<template>
+<template>
 
   <div class="blog">
       <div class="back-background"></div>
@@ -149,34 +149,34 @@ ol {
 
 
     .back {
-      font-size:.8rem;
+      font-size:.85rem;
     }
     
      /deep/ {
 
 
       p {
-  font-size:.8rem;
+  font-size:.85rem;
   
     } 
     ul {
-  font-size:.8rem;
+  font-size:.85rem;
   padding-inline-start: 1rem;
 }
 ol {
-  font-size:.8rem;
+  font-size:.85rem;
   padding-inline-start: 2rem;
 }
 
     h1 {
 
-    font-size:.8rem;
+    font-size:.85rem;
   
 
     }
     h4 {
   
-    font-size: .8rem;
+    font-size: .85rem;
  
     }
 

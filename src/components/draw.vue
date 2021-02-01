@@ -87,7 +87,7 @@ a:active {
    .drawing-canvas {
     width:100%;
     position: relative;
-       font-size: .8rem;
+       font-size: .85rem;
   }
 
   .tool {
