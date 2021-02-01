@@ -7,6 +7,7 @@
      
       </div>
       <div class="about">(1) free exercise is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) get in touch if you would like to contribute or publish on this space as well. avalos.brendon@gmail.com8    </div>
+    </div>
 </template>
 <style scoped>
    .intro-top {
