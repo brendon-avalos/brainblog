@@ -6,7 +6,7 @@
       free <br>exercise
      
       </div>
-      <div class="about">(1) free exercise is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) this space is open to anyone that wants to publsih here. (4) to publish here contact me at avalos.brendon@gmail.com.</div>
+      <div class="about">(1) free exercise is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) this space is open to anyone that wants to publsih here. (4) reach out if you want to write something avalos.brendon@gmail.com.</div>
 
     </div>
 </template>
@@ -20,7 +20,7 @@
   left:0;
   top:0;
   font-size:1rem;
-  background-color:#FFCFA3;
+  background-color:#CED9FF;
   padding:1rem;
   box-sizing: border-box;
   display: flex;
