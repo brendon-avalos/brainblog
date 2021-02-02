@@ -23,4 +23,4 @@ new Vue({
     setTimeout(function () {
         titleScroller(text.substr(1) + text.substr(0, 1));
     }, 200);
-}("- - - f r e e - - - e x e r c i s e "));
+}("f r e e - - - e x e r c i s e - - -  "));
