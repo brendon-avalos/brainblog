@@ -130,7 +130,6 @@ ol {
       float:right;
       white-space: normal; 
       height:auto;
-      letter-spacing: 4rem;
       line-height: 1.25;
       text-transform: lowercase;
       border: 1px solid black;
