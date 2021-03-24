@@ -60,6 +60,8 @@ export default {
     transition: all .3s ease;
 }
 
+img{width:100%;}
+
 .back-background {
     position:fixed;
        width:100%;
