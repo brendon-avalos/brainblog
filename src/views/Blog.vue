@@ -3,7 +3,7 @@
   <div class="blog">
       <div class="back-background"></div>
       <router-link to="/" tag="a" class="back">< index</router-link>
-      <div class="fakeback">< idsadslkajdjklsax</div>
+      <div class="fakeback"></div>
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
       <div class="section" v-for="entry in entries[section]" :key="entry.id">
 
@@ -42,11 +42,13 @@ export default {
   
    width:50%;
    float:right;
-   background-color:#EEE;
+   background-color:#fff;
+
    padding:1rem;
    overflow-x: hidden;
    min-height:100vh;
-    box-sizing: border-box; 
+   box-sizing: border-box;
+
 
 
 .fakeback {
@@ -60,14 +62,13 @@ export default {
     transition: all .3s ease;
 }
 
-img{width:100%;}
-
 .back-background {
     position:fixed;
-       width:100%;
+    width:100%;
     height:3rem;
     top:0;
-     background-color: #EEE;
+    background-color: #fff;
+
 }
   .back {
     position:fixed;
@@ -86,6 +87,9 @@ img{width:100%;}
     }
   }
   /deep/ {
+
+       img {max-width:100%;}
+
 
 p {
   font-size:1rem;

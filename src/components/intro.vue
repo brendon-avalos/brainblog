@@ -19,13 +19,15 @@
   left:0;
   top:0;
   font-size:1rem;
-  background-color:#E7E8D9;
+  background-color:#fff;
   padding:1rem;
   box-sizing: border-box;
   display: flex;
   flex-flow: column wrap;
   justify-content:space-between;
    white-space: normal; 
+  border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .about {

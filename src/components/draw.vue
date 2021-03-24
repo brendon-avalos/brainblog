@@ -73,9 +73,10 @@ a:active {
   position:fixed;
   left:0;
   font-size:1rem;
-  background-color:#FBFBF6;
+  background-color:#fff;
   box-sizing: border-box; 
   overflow: hidden; 
+  border-right: 1px solid black;
 
 
 }

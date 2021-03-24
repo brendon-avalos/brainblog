@@ -51,7 +51,8 @@ export default {
   width:50%;
   
   float:right;
-   background-color:#D7D9BF;
+  background-color:#fff;
+  border-left: 1px solid black;
 
 
 
