@@ -1,12 +1,9 @@
 
 <template> 
     <div class="intro-top">
-      <div class="name">
-
-      <div class="free">free</div><div class="exercise">exercise</div>
-     
+      <div class="name"><img src="../assets/freework.svg">
       </div>
-      <div class="about">(1) free exercise is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) created by brendon ava</div>
+      <div class="about">(1) free work is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) created by brendon avalos.</div>
     </div>
 </template>
 <style scoped>
@@ -30,6 +27,15 @@
     border-right: 1px solid black;
 }
 
+img {
+  width:100%;
+}
+
+.name {
+  width:100%;
+
+}
+
 .about {
   letter-spacing:0;
 
@@ -44,11 +50,6 @@
 
   }
 
-    img {
-     width:20px;
-  height:20px;
-
-}
 
 
 
