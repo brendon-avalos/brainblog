@@ -4,7 +4,7 @@
     <div class="sections">
      
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <div class="title">latest exercises</div>
+        <div class="title">latest entries</div>
         
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry">
