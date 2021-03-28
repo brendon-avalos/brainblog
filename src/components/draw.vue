@@ -1,7 +1,7 @@
 <template>
  <div class="drawing-canvas">
 
-      <div class="draw-instructions">a countour line exercise</div>
+      <div class="draw-instructions"></div>
      
      
 

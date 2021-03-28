@@ -1,4 +1,5 @@
 import sketch from '../src/plugins/sketch.js'
+import morph from '../src/plugins/morphPath.js'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -10,7 +11,7 @@ import draw from '@/components/draw'
 Vue.config.productionTip = false
 
 Vue.component('intro', intro)
-Vue.component('draw', draw)
+
 
 new Vue({
   router,
