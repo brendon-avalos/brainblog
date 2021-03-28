@@ -2,7 +2,11 @@
 
   <div class="blog">
       <div class="back-background"></div>
-      <router-link to="/" tag="a" class="back">< index</router-link>
+      <router-link to="/" tag="a" class="back"><svg width="203" class="backarrow" height="16" viewBox="0 0 203 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M68 1L1 8.00023L68 15 M150 7.97034C65.5 10 1 7.97034 1 7.97034" stroke="black"/>
+
+</svg>
+</router-link>
       <div class="fakeback"></div>
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
       <div class="section" v-for="entry in entries[section]" :key="entry.id">
@@ -42,7 +46,7 @@ export default {
   
    width:50%;
    float:right;
-   background-color:#fff;
+   background-color:#F3DFFF;
 
    padding:1rem;
    overflow-x: hidden;
@@ -67,25 +71,43 @@ export default {
     width:100%;
     height:3rem;
     top:0;
-    background-color: #fff;
+    background-color: #F3DFFF;
 
 }
   .back {
     position:fixed;
     color: black;
     margin-bottom: 5rem;
+     line-height: 2rem;
     text-decoration: none;
-    width:25%;
+    display:inline-block;
     font-size:1rem;
     border: 1px solid transparent;
+      transition: 0.2s;
+   
    
  
-    &:hover {
-     letter-spacing: .5rem;
-       border: 1px solid black;
-    
-    }
+ 
+
+
   }
+.back:hover  {
+  padding-left:1rem;
+} 
+
+
+
+
+
+svg path {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: 0.2s;
+}
+
+
   /deep/ {
 
        img {max-width:100%;}

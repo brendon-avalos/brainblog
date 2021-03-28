@@ -4,13 +4,13 @@
     <div class="sections">
      
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <div class="title">latest entries</div>
+   
         
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry">
             <h3 @click="$router.push({name: entry.id})">
-              {{entry.title}}   <div class="date">{{entry.date}}</div>
-          </h3>
+              {{entry.title}}</h3>   <div class="date">{{entry.date}}</div>
+          
         
    
         </div>
@@ -86,20 +86,26 @@ h2 {
 h3 {
   color: black;
   font-size:1rem;
+  line-height: 2rem;
   font-weight: 500;
   cursor: pointer;
   margin:0;
+   display: inline-block;
   letter-spacing: .01rem;
   text-transform: uppercase;
   border: 1px solid transparent;
+  transition-duration: .35s;
+    padding-right:1rem;
 
 
 
  
   &:hover {
-    letter-spacing: .5rem;
-       border: 1px solid black;
+    letter-spacing: .2rem;
+ 
+       background-color:#F3DFFF;
        box-sizing:border-box;
+        border-right: 1px solid black;
   }
 
   }
@@ -118,12 +124,12 @@ p {
 
 
 .section {
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 
 .title{
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   font-size:1rem;
 }
 
