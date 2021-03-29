@@ -3,7 +3,7 @@
     <div class="intro-top">
       <div class="name"><img src="../assets/freework.svg"></div>
       <div class="yellowsquare"></div>
-       <div class="about">[1] "Free work" is what you have to do to stay employable. [2] It also is something you have to do to understand your own craft. [3] Here I am exploring the craft of writing.</div>
+       <div class="about">[1] "Free work" is what you have to do to stay employable. [2] It also is something you have to do to understand your own craft. [3] This is a space for that understanding.</div>
 
    
        <div class="scribble"><svg class="scribbleanimate" width="546" height="530" viewBox="0 0 546 530" fill="none" xmlns="http://www.w3.org/2000/svg">
