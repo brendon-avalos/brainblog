@@ -3,7 +3,7 @@
   <div class="blog">
       <div class="back-background"></div>
       <router-link to="/" tag="a" class="back"><svg width="203" class="backarrow" height="16" viewBox="0 0 203 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M68 1L1 8.00023L68 15 M150 7.97034C65.5 10 1 7.97034 1 7.97034" stroke="black"/>
+<path d="M68 1L1 8.00023L68 15 M150 7.97034C65.5 10 1 7.97034 1 7.97034" stroke="black" stroke-width="1"/>
 
 </svg>
 </router-link>
@@ -47,7 +47,6 @@ export default {
    width:50%;
    float:right;
    background-color:#F3DFFF;
-
    padding:1rem;
    overflow-x: hidden;
    min-height:100vh;
@@ -83,7 +82,7 @@ export default {
     display:inline-block;
     font-size:1rem;
     border: 1px solid transparent;
-      transition: 0.2s;
+      transition: 0.3s;
    
    
  
@@ -92,7 +91,7 @@ export default {
 
   }
 .back:hover  {
-  padding-left:1rem;
+  padding-left:2rem;
 } 
 
 
@@ -114,10 +113,17 @@ svg path {
 
 
 p {
-  font-size:1rem;
-      margin-block-start: 2em;
+    font-size:1rem;
+    margin-block-start: 2em;
     margin-block-end: 0em;
+    font-family: 'Xanh Mono', monospace;
   
+}
+
+code {
+    font-family: 'Xanh Mono', monospace;
+    text-transform: uppercase;
+
 }
 
 ul {
@@ -131,17 +137,16 @@ ol {
 }
 
     h1 {
-    color: black;
-    font-size:1rem;
-    font-weight: 500;
-    letter-spacing: .01rem;
-    margin:0;
+    font-family: 'Xanh Mono', monospace;
     text-transform: uppercase;
+    font-size:1.5rem;
+  
+    font-weight: normal;
 
     }
     h4 {
-    opacity:1;
-    font-size: 1rem;
+    
+    font-size: .85rem;
     font-weight: 300;
     text-transform: lowercase;
     margin-bottom:5rem;
@@ -149,7 +154,7 @@ ol {
 
     }
     pre {
-      font-style: italic;
+      font-family: 'Xanh Mono', monospace;
       display: inline-block;
       font-size:1.25rem;
       width:40%;
@@ -209,6 +214,7 @@ ol {
     }
 
     pre {
+      font-family: 'Xanh Mono', monospace;
       font-style: italic;
       display: block;
       font-size:1.1rem;

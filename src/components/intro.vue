@@ -3,6 +3,8 @@
     <div class="intro-top">
       <div class="name"><img src="../assets/freework.svg"></div>
       <div class="yellowsquare"></div>
+       <div class="about">[1] "Free work" is what you have to do to stay employable. [2] It also is something you have to do to understand your own craft. [3] Here I am exploring the craft of writing.</div>
+
    
       <div class="scribble"><svg class="scribbleanimate" width="546" height="530" viewBox="0 0 546 530" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M500 335.5L255.5 28.0002C319 9 479.6 -31.3998 412 49.0002C344.4 129.4 203 157 392 500.5C105.5 58 59.8 31.4002 1 243" stroke="black" stroke-width="1">
@@ -24,7 +26,7 @@
 
       </div>
    
-      <div class="about">(1) free work is a space for writing exercises. (2) it was created in effort to improve my writing skills. (3) created by brendon avalos.</div>
+    
     </div>
 </template>
 
@@ -35,43 +37,49 @@
 
 
 <style scoped>
-   .intro-top {
 
+
+
+
+   .intro-top {
   cursor: url('../assets/book.png') 0 50, auto;
   width:50%;
   height:100vh;
   position:fixed;
   left:0;
   top:0;
-  font-size:1rem;
   background-color:#FAF7EF;
   padding:1rem;
   box-sizing: border-box;
   display: flex;
   flex-flow: column wrap;
   justify-content:space-between;
-   white-space: normal; 
-
-    border-right: 1px solid black;
-}
+  white-space: normal;
+  border-right: 1px solid black;
+  }
 
 
 .scribbleanimate path {
   animation: morph 8s cubic-bezier(0.85, 0, 0.15, 1) infinite;
+  } 
 
-}
+
+.about {
+  font-family: 'Xanh Mono', monospace;
+  text-transform: uppercase;
+  font-size:1.5rem;
+  line-height:2rem;
+  }
+
 
 
 .scribble{
   position: absolute;
   width:60%;
-  top:30%;
+  top:40%;
   left:15%;
   z-index: 2;
-
-
-
-}
+  }
 
 
 

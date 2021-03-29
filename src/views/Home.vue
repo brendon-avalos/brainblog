@@ -1,17 +1,17 @@
 <template>
   <div class="home">
 
+     
     <div class="sections">
      
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
    
         
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
-          <div class="entry">
-            <h3 @click="$router.push({name: entry.id})">
-              {{entry.title}}</h3>   <div class="date">{{entry.date}}</div>
+         
+            <div class="entry" @click="$router.push({name: entry.id})"><div class="headline">
+              {{entry.title}} </div> <div class="date">{{entry.date}}</div>
           
-        
    
         </div>
           </div>
@@ -45,17 +45,12 @@ export default {
 
 
 
-
-
 .home {
   width:50%;
-  
+  box-sizing:border-box;
   float:right;
   background-color:#fff;
-  border-left: 1px solid black;
-
-
-
+  padding:1rem;
 }
 
 
@@ -63,11 +58,10 @@ export default {
   text-align: left;
 }
 .headline {
- 
-  text-transform: titlecase;
-  margin: 1.5rem auto;
+  font-family: 'Xanh Mono', monospace;
+  text-transform: uppercase;
   font-size: 1rem;
-  line-height:80%;
+
 }
 img {
   display: block;
@@ -85,47 +79,31 @@ h2 {
 
 h3 {
   color: black;
-  font-size:1rem;
-  line-height: 2rem;
+  font-size:.85rem;
+  line-height: 1rem;
   font-weight: 500;
   cursor: pointer;
   margin:0;
    display: inline-block;
   letter-spacing: .01rem;
-  text-transform: uppercase;
-  border: 1px solid transparent;
-  transition-duration: .35s;
-    padding-right:1rem;
-
-
-
- 
-  &:hover {
-    letter-spacing: .2rem;
- 
-       background-color:#F3DFFF;
-       box-sizing:border-box;
-        border-right: 1px solid black;
-  }
+  text-transform: uppercase; 
 
   }
 
   .date {
     opacity:1;
-    font-size: 1rem;
+    font-size: .85rem;
     font-weight: 300;
     text-transform: lowercase;
   }
 
 p {
+  font-size: .85rem;
   margin-top: .4rem;
 }
 
 
 
-.section {
-  margin-bottom: 7rem;
-}
 
 
 .title{
@@ -133,10 +111,31 @@ p {
   font-size:1rem;
 }
 
-.group {
-  padding:1rem;
+.group{
+  
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
 
 }
+
+.entry{
+   font-size: .85rem;
+    border: 1px solid black;
+    padding:1rem;
+    flex-grow: 4;
+    transition-duration: .35s;
+    margin-left:-1px;
+    margin-bottom:-1px;
+
+
+  &:hover{
+      letter-spacing: .25rem;
+       background-color:#F3DFFF;
+       cursor:pointer;
+  }
+}
+
 
 
 
@@ -152,6 +151,7 @@ p {
 
   h3 {
   font-size:.85rem;
+
   }
 
   .date {
