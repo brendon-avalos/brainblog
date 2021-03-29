@@ -6,7 +6,7 @@
        <div class="about">[1] "Free work" is what you have to do to stay employable. [2] It also is something you have to do to understand your own craft. [3] Here I am exploring the craft of writing.</div>
 
    
-      <div class="scribble"><svg class="scribbleanimate" width="546" height="530" viewBox="0 0 546 530" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <div class="scribble"><svg class="scribbleanimate" width="546" height="530" viewBox="0 0 546 530" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M500 335.5L255.5 28.0002C319 9 479.6 -31.3998 412 49.0002C344.4 129.4 203 157 392 500.5C105.5 58 59.8 31.4002 1 243" stroke="black" stroke-width="1">
     
   
@@ -19,6 +19,13 @@
 </svg>
 
 </svg>
+    
+  
+
+
+   
+
+
 </div>
       <div class="animationcontainer">
       <div class="circle"></div>
