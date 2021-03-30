@@ -159,7 +159,6 @@ ol {
       font-size:1.25rem;
       width:40%;
       padding:1rem 1rem;
-      margin:1.5rem;
       float:right;
       white-space: normal; 
       height:auto;
@@ -189,7 +188,7 @@ ol {
 
 
       p {
-  font-size:.85rem;
+  font-size:1rem;
   
     } 
     ul {
@@ -203,7 +202,11 @@ ol {
 
     h1 {
 
-    font-size:.85rem;
+    font-family: 'Xanh Mono', monospace;
+    text-transform: uppercase;
+    font-size:1.5rem;
+  
+    font-weight: normal;
   
 
     }
@@ -215,9 +218,9 @@ ol {
 
     pre {
       font-family: 'Xanh Mono', monospace;
-      font-style: italic;
+      
       display: block;
-      font-size:1.1rem;
+      font-size:1.5rem;
       width:50%;
       margin:1rem;
       padding-left: 1rem;

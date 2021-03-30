@@ -11,7 +11,7 @@
 
 <div class="scribble">
   <img>
-   <svg height="546px" width="530px" viewBox="0 0 546 530">
+   <svg height="100%" width="100%" viewBox="0 0 546 530">
      <path fill="none" stroke="#000" stroke-width="1" d="M500 335.5
                           L255.5 28.0002
                           C319 9 479.6 -31.3998 412 49.0002
@@ -142,9 +142,7 @@ svg {
   }
 
 
-.scribbleanimate path {
-  animation: morph 8s cubic-bezier(0.85, 0, 0.15, 1) infinite;
-  } 
+
 
 
 .about {
@@ -158,48 +156,13 @@ svg {
 
 .scribble{
   position: absolute;
-  width:60%;
-  top:40%;
-  left:15%;
+  width:50%;
+  bottom: 8%;
+  right:20vw;
   z-index: 2;
   }
 
 
-
-@keyframes morph {
- 
-  0%{
-    d:path('M500 335.5L255.5 28.0002C319 9 479.6 -31.3998 412 49.0002C344.4 129.4 203 157 392 500.5C105.5 58 59.8 31.4002 1 243');
-  }
-  30%{
-      d:path('M500 335.5L255.5 28.0002C319 9 479.6 -31.3998 412 49.0002C344.4 129.4 203 157 392 500.5C105.5 58 59.8 31.4002 1 243');
-  }
-
-  35%{
-    d:path('M165 41.5001L83 390.5C220.5 85.5 400.363 22.9276 296 11.0003C-36.5 -26.9999 31.5 28 220.5 371.5C-66 -71.0003 934.5 182.5 1 258');
-  }
-
-  70%{
-   d:path('M165 41.5001L83 390.5C220.5 85.5 400.363 22.9276 296 11.0003C-36.5 -26.9999 31.5 28 220.5 371.5C-66 -71.0003 934.5 182.5 1 258');
-  }
-
-  75%{
-
-    d:path('M14 79.5L435.998 79.5C227.999 193 -154.781 407 69.999 172C301.325 -69.8442 475 -50.5001 495.5 203C-169.5 509 979.5 -140.5 137.5 287.5');
-  
-  }
- 
-    95%{
-
-    d:path('M14 79.5L435.998 79.5C227.999 193 -154.781 407 69.999 172C301.325 -69.8442 475 -50.5001 495.5 203C-169.5 509 979.5 -140.5 137.5 287.5');
-  
-  }
-    100%{
-    d:path('M500 335.5L255.5 28.0002C319 9 479.6 -31.3998 412 49.0002C344.4 129.4 203 157 392 500.5C105.5 58 59.8 31.4002 1 243');
-  }
-
-
-}
 
 
 
@@ -221,7 +184,6 @@ img {
   letter-spacing:0;
 
 }
-
 
 
 
@@ -292,11 +254,66 @@ img {
 @media only screen and (max-width: 600px) {
    .intro-top {
     width:100%;
-    height:50vh;
+    height:100vh;
     position: fixed;
     z-index: -100;
-       font-size: .85rem;
+    font-size: .85rem;
+    border-right: 0px solid black;
   }
+
+
+  .about {
+  font-family: 'Xanh Mono', monospace;
+  text-transform: uppercase;
+  font-size:1.5rem;
+  line-height:2rem;
+  }
+
+
+
+  .scribble{
+  position: absolute;
+  width:90%;
+  bottom:15%;
+  right:2vw;
+  z-index: 2;
+  }
+
+  .yellowsquare 
+{
+  position: absolute;
+  top:25%;
+  left:50%;
+  width:35%;
+  height:35%;
+  background: #F1F43D;
+  z-index: 1;
+}
+
+
+
+
+  .animationcontainer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+
+.circle{
+  position:fixed;
+  width:94vw;
+  height:16vw;
+  transform: rotate(-160deg);
+  top:20%;
+  margin:auto;
+  border-radius: 100%;
+  border: 1px solid black;
+  animation: circleanimation 6s cubic-bezier(0.85, 0, 0.15, 1) infinite alternate;
+  
+}
 
 
 }

@@ -144,10 +144,12 @@ p {
     width:100%;
     min-height:50vh;
     position: relative;
-    margin-top:50vh;
-   
+    margin-top:100vh;
+  border-top: 1px solid black; 
 
   }
+
+
 
   h3 {
   font-size:.85rem;
