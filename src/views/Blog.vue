@@ -113,7 +113,8 @@ svg path {
 
 
 p {
-    font-size:1rem;
+    font-size:1.25rem;
+    line-height: 1.75rem;
     margin-block-start: 2em;
     margin-block-end: 0em;
     font-family: 'Xanh Mono', monospace;
@@ -139,7 +140,7 @@ ol {
     h1 {
     font-family: 'Xanh Mono', monospace;
     text-transform: uppercase;
-    font-size:1.5rem;
+    font-size:2rem;
   
     font-weight: normal;
 
@@ -156,7 +157,7 @@ ol {
     pre {
       font-family: 'Xanh Mono', monospace;
       display: inline-block;
-      font-size:1.25rem;
+      font-size:2rem;
       width:40%;
       padding:1rem 1rem;
       float:right;

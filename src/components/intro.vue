@@ -281,7 +281,7 @@ img {
   .scribble{
   position: absolute;
   width:90%;
-  bottom:15%;
+  bottom:0%;
   right:2vw;
   z-index: 2;
   }
@@ -326,7 +326,7 @@ img {
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
    
   #scribblepath {
     stroke-width:1.5;

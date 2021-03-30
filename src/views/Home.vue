@@ -60,7 +60,7 @@ export default {
 .headline {
   font-family: 'Xanh Mono', monospace;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.5rem;
 
 }
 img {
@@ -71,7 +71,7 @@ img {
 
 h2 {
   color: black;
-  font-size:1rem;
+  font-size:1.5rem;
   letter-spacing: 0rem;
   margin-bottom: 2rem;
   font-weight:500;
@@ -108,7 +108,7 @@ p {
 
 .title{
   margin-bottom: 1rem;
-  font-size:1rem;
+  font-size:1.5rem;
 }
 
 .group{
