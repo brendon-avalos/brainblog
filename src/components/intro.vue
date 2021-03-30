@@ -3,7 +3,7 @@
     <div class="intro-top">
       <div class="name"><img src="../assets/freework.svg"></div>
       <div class="yellowsquare"></div>
-       <div class="about">[1] "Free work" is what you have to do to stay employable. [2] It also is something you have to do to understand your own craft. [3] This is a space for that understanding.</div>
+       <div class="about">A website with no goals. </div>
 
    
  
@@ -11,8 +11,8 @@
 
 <div class="scribble">
   <img>
-   <svg height="100%" width="100%" viewBox="0 0 546 530">
-     <path fill="none" stroke="#000" stroke-width="1" d="M500 335.5
+   <svg height="100%" width="100%" viewBox="0 0 546 530" id="scribblepath">
+     <path fill="none" stroke="#000"  d="M500 335.5
                           L255.5 28.0002
                           C319 9 479.6 -31.3998 412 49.0002
                           C344.4 129.4 203 157 392 500.5
@@ -148,23 +148,30 @@ svg {
 .about {
   font-family: 'Xanh Mono', monospace;
   text-transform: uppercase;
-  font-size:1.5rem;
+  font-size:2rem;
   line-height:2rem;
+  text-align: center;
   }
 
 
 
 .scribble{
   position: absolute;
-  width:50%;
+  width:80%;
   bottom: 8%;
-  right:20vw;
+  right:10vw;
   z-index: 2;
+
+
   }
 
 
 
+#scribblepath {
 
+    stroke-width:1.2;
+  
+}
 
 
 
@@ -240,7 +247,7 @@ img {
   position: absolute;
   top:25%;
   left:60%;
-  width:20%;
+  width:24%;
   height:24%;
   background: #F1F43D;
   z-index: 1;
@@ -254,7 +261,7 @@ img {
 @media only screen and (max-width: 600px) {
    .intro-top {
     width:100%;
-    height:100vh;
+    height:90vh;
     position: fixed;
     z-index: -100;
     font-size: .85rem;
@@ -318,6 +325,27 @@ img {
 
 }
 
+
+@media only screen and (max-width: 1024px) {
+   
+  #scribblepath {
+    stroke-width:1.5;
+  }
+}
+@media only screen and (min-width: 1200px) {
+   
+  #scribblepath {
+  stroke-width:1;
+  }
+}
+
+
+@media only screen and (min-width: 1600px) {
+   
+  #scribblepath {
+  stroke-width:.8;
+  }
+}
 
 
 </style>

@@ -144,7 +144,7 @@ p {
     width:100%;
     min-height:50vh;
     position: relative;
-    margin-top:100vh;
+    margin-top:90vh;
   border-top: 1px solid black; 
 
   }
