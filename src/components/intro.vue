@@ -3,7 +3,7 @@
     <div class="intro-top">
       <div class="name"><img src="../assets/freework.svg"></div>
       <div class="yellowsquare"></div>
-       <div class="about">A website with no goals. </div>
+       <div class="about">Always be free. </div>
 
    
  
