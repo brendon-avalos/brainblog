@@ -125,7 +125,7 @@ svg {
 }
 
    .intro-top {
-  cursor: url('../assets/book.png') 0 50, auto;
+  cursor: url('../assets/book.png') 0 0, auto;
   width:50%;
   height:100vh;
   position:fixed;
