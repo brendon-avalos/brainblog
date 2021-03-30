@@ -163,6 +163,7 @@ svg {
   z-index: 2;
 
 
+
   }
 
 
@@ -209,10 +210,11 @@ img {
 
 .circle{
   position:fixed;
+
   width:47vw;
   height:16vw;
   transform: rotate(-160deg);
-  top:20%;
+  top:40%;
   margin:auto;
   border-radius: 100%;
   border: 1px solid black;
