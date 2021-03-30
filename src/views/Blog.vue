@@ -3,7 +3,7 @@
   <div class="blog">
       <div class="back-background"></div>
       <router-link to="/" tag="a" class="back"><svg width="203" class="backarrow" height="16" viewBox="0 0 203 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M68 1L1 8.00023L68 15 M150 7.97034C65.5 10 1 7.97034 1 7.97034" stroke="black" stroke-width="1"/>
+<path d="M68 1L1 8.00023L68 15 M150 7.97034C65.5 10 1 7.97034 1 7.97034" stroke="black" stroke-width=".8"/>
 
 </svg>
 </router-link>
