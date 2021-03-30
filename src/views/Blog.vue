@@ -114,7 +114,7 @@ svg path {
 
 p {
     font-size:1.25rem;
-    line-height: 1.75rem;
+    line-height: 1.5;
     margin-block-start: 2em;
     margin-block-end: 0em;
     font-family: 'Xanh Mono', monospace;
@@ -163,9 +163,10 @@ ol {
       float:right;
       white-space: normal; 
       height:auto;
-      line-height: 1.25;
+      line-height: 1;
       text-transform: lowercase;
       border: 1px solid black;
+      margin-left:1rem;
       
 
 

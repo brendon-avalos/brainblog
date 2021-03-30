@@ -126,6 +126,9 @@ svg {
 
    .intro-top {
   cursor: url('../assets/book.png') 0 0, auto;
+  background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/9672275/original_286ffda4f33db358938eb3a76cd11c8e.jpg?1606491065?bc=0");
+   background-repeat: no-repeat;
+     background-size: cover; 
   width:50%;
   height:100vh;
   position:fixed;
@@ -158,7 +161,7 @@ svg {
 .scribble{
   position: absolute;
   width:80%;
-  bottom: 8%;
+  bottom: 0%;
   right:10vw;
   z-index: 2;
 
@@ -214,7 +217,7 @@ img {
   width:47vw;
   height:16vw;
   transform: rotate(-160deg);
-  top:40%;
+  top:30%;
   margin:auto;
   border-radius: 100%;
   border: 1px solid black;
