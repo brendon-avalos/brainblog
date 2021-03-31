@@ -1,5 +1,4 @@
 import sketch from '../src/plugins/sketch.js'
-import morph from '../src/plugins/morphPath.js'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'

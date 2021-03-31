@@ -7,7 +7,7 @@
 
 
       <router-view/>
-       <draw/>
+
     </div>
   </div>
 
