@@ -271,7 +271,7 @@ svg {
 
 
 .scribble{
-  display: none;
+  
   position: absolute;
   width:80%;
   bottom: 0%;
