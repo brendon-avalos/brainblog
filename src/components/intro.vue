@@ -105,7 +105,7 @@
    
   </path>
 </svg>
-</img>
+
 
 
 </div>
@@ -139,7 +139,7 @@
     $imageEls.eq(index - 1).removeClass('show');
 
   }, 4000);
-};
+}
 
 // Document Ready.
 $(function () {
@@ -240,7 +240,7 @@ svg {
 
 
   .created{
-  	font-size:1.25rem;
+	font-size:1.25rem;
   }
 
 .bgimageshape {
@@ -271,7 +271,7 @@ svg {
 
 
 .scribble{
-  
+  display: none;
   position: absolute;
   width:80%;
   bottom: 0%;
