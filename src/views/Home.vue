@@ -9,16 +9,23 @@
         
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
          
-            <div class="entry" @click="$router.push({name: entry.id})"><div class="headline">
-              {{entry.title}} </div> <div class="date">{{entry.date}}</div>
+            <div class="entry" @click="$router.push({name: entry.id})">
+              <div class="date">{{entry.date}}</div>
+              <div class="headline">{{entry.title}} </div> 
           
    
         </div>
           </div>
         </div>
       </div>
+
+
+      <div class="about">
+        "FREE WORK" <em>IS AN ONLINE SPACE FOR CREATIVE EXERCISES AROUND WRITING AND DESIGN. THE GOAL IS TO TAKE AWAY THE BOUNDARIES OF STRESS, MONEY, OR TIMELINES AND TO CREATE FREElY. IT’s STILL WORK BUT HOPEFULLY IT FEELS A BIT MORE FREEING.</em>
+      </div>
+
     </div>
-  </div>
+ 
 </template>
 
 <script>
@@ -41,26 +48,45 @@ export default {
 <style lang="scss" scoped>
 
 
+em{
+  font-family: 'Xanh Mono', monospace;
+  font-style: normal; 
+  letter-spacing: 0rem;
+  }
 
+.about {
+  line-height: 1.25rem;
+  letter-spacing: -.02rem;
+}
 
-
+.sections{
+  margin-top:3rem;
+}
 
 .home {
   width:50%;
+  height:100vh;
   box-sizing:border-box;
   float:right;
-  background-color:#fff;
+  background-color:#EDEDED;
   padding:1rem;
+  display: flex;
+  justify-content: space-between;
+   flex-direction:column;
 }
 
 
 .left {
   text-align: left;
 }
+
+
+
 .headline {
-  font-family: 'Xanh Mono', monospace;
+  font-family: Arial;
+  letter-spacing: -1px;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 
 }
 img {
@@ -72,7 +98,7 @@ img {
 h2 {
   color: black;
   font-size:1.5rem;
-  letter-spacing: 0rem;
+ letter-spacing: -1px;
   margin-bottom: 2rem;
   font-weight:500;
 }
@@ -92,10 +118,15 @@ h3 {
 
   .date {
     opacity:1;
-    font-size: .85rem;
+    font-family: 'Xanh Mono', monospace;
+    text-transform: uppercase;
+    font-size: 1rem;
     font-weight: 300;
-    text-transform: lowercase;
+    margin-bottom:.5rem;
+
   }
+
+
 
 p {
   font-size: .85rem;
@@ -124,14 +155,15 @@ p {
     border: 1px solid black;
     padding:1rem;
     flex-grow: 4;
-    transition-duration: .35s;
+    transition-duration: 10s;
     margin-left:-1px;
     margin-bottom:-1px;
 
 
   &:hover{
-      letter-spacing: .25rem;
-       background-color:#F3DFFF;
+     
+      background: rgb(75,255,255);
+background: linear-gradient(0deg, rgba(75,255,255,1) 0%, rgba(255,255,255,0) 100%);
        cursor:pointer;
   }
 }
