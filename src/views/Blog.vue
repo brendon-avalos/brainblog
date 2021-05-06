@@ -2,11 +2,7 @@
 
   <div class="blog">
       <div class="back-background"></div>
-      <router-link to="/" tag="a" class="back"><svg width="203" class="backarrow" height="16" viewBox="0 0 203 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M68 1L1 8.00023L68 15 M150 7.97034C65.5 10 1 7.97034 1 7.97034" stroke="black" stroke-width=".8"/>
-
-</svg>
-</router-link>
+      <router-link to="/" tag="a" class="back">BACK TO INDEX</router-link>
       <div class="fakeback"></div>
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
       <div class="section" v-for="entry in entries[section]" :key="entry.id">
@@ -46,7 +42,7 @@ export default {
   
    width:50%;
    float:right;
-   background-color:#F3DFFF;
+   background-color:#fff;
    padding:1rem;
    overflow-x: hidden;
    min-height:100vh;
@@ -62,15 +58,16 @@ export default {
     font-size:1rem;
     display: inline-block;
     visibility: hidden;
-    transition: all .3s ease;
+  
 }
 
 .back-background {
     position:fixed;
-    width:100%;
-    height:3rem;
+    width:50%;
+    height:4rem;
     top:0;
-    background-color: #F3DFFF;
+    right:0;
+    background-color: #fff;
 
 }
   .back {
@@ -82,16 +79,16 @@ export default {
     display:inline-block;
     font-size:1rem;
     border: 1px solid transparent;
-      transition: 0.3s;
-   
-   
- 
- 
+    font-family: Arial;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    }
 
 
-  }
+
 .back:hover  {
-  padding-left:2rem;
+ 
 } 
 
 
@@ -109,7 +106,11 @@ svg path {
 
   /deep/ {
 
-       img {max-width:100%;}
+       img {max-width:100%;
+        min-width:100%;
+       
+
+       }
 
 
 p {
@@ -118,11 +119,12 @@ p {
     margin-block-start: 2em;
     margin-block-end: 0em;
     font-family: 'Xanh Mono', monospace;
+    text-indent: 6rem;
   
 }
 
 code {
-    font-family: 'Xanh Mono', monospace;
+  font-family: Arial;
     text-transform: uppercase;
 
 }
@@ -138,26 +140,36 @@ ol {
 }
 
     h1 {
-    font-family: 'Xanh Mono', monospace;
-    text-transform: uppercase;
-    font-size:2rem;
-  
-    font-weight: normal;
-
+     font-family: Arial;
+     letter-spacing: -1px;
+     text-transform: uppercase;
+     font-size: 1.75rem;
+     font-weight: normal; 
+     margin-bottom:6rem;
+     margin-block-start:0;
+     margin-left:6rem;
     }
+
+
     h4 {
     
-    font-size: .85rem;
+    
+    font-family: 'Xanh Mono', monospace;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom:0;
+    margin-left:6rem;
     font-weight: 300;
-    text-transform: lowercase;
-    margin-bottom:5rem;
-    margin-top:0rem;
+    margin-top:3rem;
 
     }
     pre {
-      font-family: 'Xanh Mono', monospace;
-      display: inline-block;
-      font-size:2rem;
+       font-family: Arial;
+     letter-spacing: -1px;
+     text-transform: uppercase;
+     font-size: 1.75rem;
+     font-weight: normal; 
+ 
       width:40%;
       padding:1rem 1rem;
       float:right;
