@@ -21,11 +21,13 @@
 
 
       <div class="about">
-        "FREE WORK" <em>IS AN ONLINE SPACE FOR CREATIVE EXERCISES AROUND WRITING AND DESIGN. THE GOAL IS TO TAKE AWAY THE BOUNDARIES OF STRESS, MONEY, OR TIMELINES AND TO CREATE FREElY. IT’s STILL WORK BUT HOPEFULLY IT FEELS A BIT MORE FREEING.</em>
-      </div>
-
+        "FREE WORK" <em>IS AN ONLINE SPACE FOR CREATIVE EXERCISES AROUND WRITING AND DESIGN. THE GOAL IS TO TAKE AWAY THE BOUNDARIES OF STRESS, MONEY, OR TIMELINES AND TO CREATE FREElY. IT’s STILL WORK BUT HOPEFULLY IT FEELS A BIT MORE FREEING.(VIEW COLOPHON)</em>
     </div>
- 
+
+
+
+      <div class="colophon"><div><em>(CLOSE)</em></div>"Free work" is set in Xanh Mono and arial. This site was designed and developed by brendon avalos. It was based off a vue blog using markdown by joseph harvey angeles.</div>
+      </div> 
 </template>
 
 <script>
@@ -57,6 +59,21 @@ em{
 .about {
   line-height: 1.25rem;
   letter-spacing: -.02rem;
+}
+
+
+.colophon {
+  display: none;
+  position:fixed;
+  background:black;
+  color:white;
+  bottom:1rem;
+  right:1rem;
+  width:20rem;
+  text-transform: uppercase;
+  line-height: 1.25rem;
+  font-size:1.25rem;
+  padding:1rem;
 }
 
 .sections{

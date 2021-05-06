@@ -39,7 +39,7 @@
     <div class="footer">
       <div class="byline">
         <em>by</em> brendon avalos<br>
-        Created In<em> 2021</em>
+        Created In <em>2021</em>
       </div>
       <div class="title">
         "Free work"
@@ -100,7 +100,8 @@ svg {
         width:50%;
         height:100vh;
         position:fixed;
-        background-color:#4BFFFF;
+       background: rgb(75,255,255);
+background: linear-gradient(180deg, rgba(75,255,255,1) 70%, rgba(255,255,255,1) 100%);
         padding:1rem;
         box-sizing: border-box;
         }
