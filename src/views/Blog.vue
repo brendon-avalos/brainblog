@@ -67,7 +67,7 @@ export default {
     height:4rem;
     top:0;
     right:0;
-    background-color: #fff;
+    background-color: transparent;
 
 }
   .back {

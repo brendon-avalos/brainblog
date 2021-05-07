@@ -77,7 +77,7 @@ em{
 }
 
 .sections{
-  margin-top:3rem;
+
 }
 
 .home {

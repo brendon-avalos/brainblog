@@ -42,7 +42,7 @@
         Created In <em>2021</em>
       </div>
       <div class="title">
-        "Free work"
+        "PLEASE be free"
       </div>
       
 </div>
@@ -115,12 +115,16 @@ background: linear-gradient(180deg, rgba(75,255,255,1) 70%, rgba(255,255,255,1) 
         justify-content: center;
         align-items: center;
         position: fixed;
+        -moz-box-shadow: 0 0 30px 5px #999;
+        -webkit-box-shadow: 0 0 30px 5px #999;
 
         }
 
 
    .intro-image img{
-       width:65%;
+       width:80%;
+        filter:drop-shadow(30px 30px 10px #3B9090);
+
 
         }
 
@@ -166,7 +170,10 @@ background: linear-gradient(180deg, rgba(75,255,255,1) 70%, rgba(255,255,255,1) 
         font-size:1.75rem;
         line-height:2rem;
         position: fixed;
-        width:100%;
+        width:50%;
+        left:0;
+        top:1rem;
+        overflow: hidden;
 
         }
 
