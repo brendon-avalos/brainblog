@@ -76,9 +76,7 @@ em{
   padding:1rem;
 }
 
-.sections{
 
-}
 
 .home {
   width:50%;
