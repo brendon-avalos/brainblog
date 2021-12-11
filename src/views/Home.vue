@@ -26,7 +26,7 @@
 
 
 
-      <div  v-show="isShowing" class="colophon"><div><em>(CLOSE)</em></div>"Free work" is set in Xanh Mono and arial. This site was designed and developed by brendon avalos. It was based off a vue blog using markdown by joseph harvey angeles.</div>
+      <div   class="colophon"><div><em>(CLOSE)</em></div>"Free work" is set in Xanh Mono and arial. This site was designed and developed by brendon avalos. It was based off a vue blog using markdown by joseph harvey angeles.</div>
       </div> 
 </template>
 
@@ -47,9 +47,7 @@ export default {
     }
   },
   
-  data: {
-    showColophon:true,
-    }
+  
   }
 
 

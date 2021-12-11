@@ -1,10 +1,13 @@
 
+
+
 <template> 
 
 
 <div class="intro-top">
 
       <div class="intro-image">
+        
       </div>
     	<div class="marquee"> 
         <div class="message-box">
@@ -18,7 +21,6 @@
      ALWAYS BE FREE IT’S NOW OR NEVER DAWG.
     </div>
     <div class="message-copy">
-     ALWAYS BE FREE IT’S NOW OR NEVER DAWG.
     </div>
    
   </div>
@@ -50,10 +52,6 @@
 
 </div>
 </template>
-
-
-
-
 
 
 
@@ -116,6 +114,7 @@ svg {
         justify-content: flex-end;
         margin-bottom:3rem;
         right:1rem;
+        display: none;
         }
 
 
@@ -129,6 +128,7 @@ svg {
         left:1rem;
         margin-top:3rem;
         width:90%;
+        display: none;
 
 
         }
