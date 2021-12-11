@@ -21,12 +21,12 @@
 
 
       <div class="about">
-        "FREE WORK" <em>IS AN ONLINE SPACE FOR CREATIVE EXERCISES AROUND WRITING AND DESIGN. THE GOAL IS TO TAKE AWAY THE BOUNDARIES OF STRESS, MONEY, OR TIMELINES AND TO CREATE FREElY. IT’s STILL WORK BUT HOPEFULLY IT FEELS A BIT MORE FREEING.(VIEW COLOPHON)</em>
+        "FREE WORK" <em>IS AN ONLINE SPACE FOR CREATIVE EXERCISES AROUND WRITING AND DESIGN. THE GOAL IS TO TAKE AWAY THE BOUNDARIES OF STRESS, MONEY, OR TIMELINES AND TO CREATE FREElY. IT’s STILL WORK BUT HOPEFULLY IT FEELS A BIT MORE FREEING.<div v-on:click="showColophon === true">(VIEW COLOPHON)</div></em>
     </div>
 
 
 
-      <div class="colophon"><div><em>(CLOSE)</em></div>"Free work" is set in Xanh Mono and arial. This site was designed and developed by brendon avalos. It was based off a vue blog using markdown by joseph harvey angeles.</div>
+      <div  v-show="isShowing" class="colophon"><div><em>(CLOSE)</em></div>"Free work" is set in Xanh Mono and arial. This site was designed and developed by brendon avalos. It was based off a vue blog using markdown by joseph harvey angeles.</div>
       </div> 
 </template>
 
@@ -37,6 +37,7 @@
 
 import BLOGENTRIES from '@/statics/data/blogs.json'
 
+ 
 
 export default {
   name: 'home',
@@ -44,8 +45,17 @@ export default {
     entries() {
       return BLOGENTRIES
     }
+  },
+  
+  data: {
+    showColophon:true,
+    }
   }
-}
+
+
+
+
+
 </script>
 <style lang="scss" scoped>
 
@@ -63,7 +73,7 @@ em{
 
 
 .colophon {
-  display: none;
+   display: absolute;
   position:fixed;
   background:black;
   color:white;
