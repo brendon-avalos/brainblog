@@ -5,7 +5,6 @@
 <div class="intro-top">
 
       <div class="intro-image">
-        <img src="../assets/intro_image.png">
       </div>
     	<div class="marquee"> 
         <div class="message-box">
@@ -80,8 +79,8 @@ svg {
         width:50%;
         height:100vh;
         position:fixed;
-       background: rgb(75,255,255);
-background: linear-gradient(180deg, rgba(75,255,255,1) 70%, rgba(255,255,255,1) 100%);
+        background: rgb(75,255,255);
+        background: linear-gradient(180deg, rgba(75,255,255,1) 70%, rgba(255,255,255,1) 100%);
         padding:1rem;
         box-sizing: border-box;
         }
@@ -97,14 +96,6 @@ background: linear-gradient(180deg, rgba(75,255,255,1) 70%, rgba(255,255,255,1) 
         position: fixed;
         -moz-box-shadow: 0 0 30px 5px #999;
         -webkit-box-shadow: 0 0 30px 5px #999;
-
-        }
-
-
-   .intro-image img{
-       width:80%;
-        filter:drop-shadow(30px 30px 10px #3B9090);
-
 
         }
 
