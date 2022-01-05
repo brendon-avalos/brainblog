@@ -1,116 +1,130 @@
 <template>
   <div class="home">
-
-     
     <div class="sections">
-     
-      <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-   
-        
+      <div
+        v-for="(section, index) in Object.keys(entries)"
+        :key="index"
+        class="group"
+      >
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
-         
-            <div class="entry" @click="$router.push({name: entry.id})">
-              <div class="date">{{entry.date}}</div>
-              <div class="headline">{{entry.title}} </div> 
-          
-   
-        </div>
+          <div class="entry" @click="$router.push({ name: entry.id })">
+            <div class="date">{{ entry.date }}</div>
+            <div class="headline">{{ entry.title }}</div>
           </div>
         </div>
       </div>
-
-
-      <div class="about">
-        "FREE WORK" <em>IS AN ONLINE SPACE FOR CREATIVE EXERCISES AROUND WRITING AND DESIGN. THE GOAL IS TO TAKE AWAY THE BOUNDARIES OF STRESS, MONEY, OR TIMELINES AND TO CREATE FREElY. IT’s STILL WORK BUT HOPEFULLY IT FEELS A BIT MORE FREEING.<div v-on:click="showColophon === true">(VIEW COLOPHON)</div></em>
     </div>
 
+    <div class="about">
+      "FREE WORK"
+      <em
+        >IS AN ONLINE SPACE FOR CREATIVE EXERCISES AROUND WRITING AND DESIGN.
+        THE GOAL IS TO TAKE AWAY THE BOUNDARIES OF STRESS, MONEY, OR TIMELINES
+        AND TO CREATE FREElY. IT’s STILL WORK BUT HOPEFULLY IT FEELS A BIT MORE
+        FREEING.
+        <div
+          class="viewcolophon"
+          @click="colophonSelected('open')"
+          style=" display:inline"
+        >
+          (VIEW COLOPHON)
+        </div></em
+      >
+    </div>
 
-
-      <div   class="colophon"><div><em>(CLOSE)</em></div>"Free work" is set in Xanh Mono and arial. This site was designed and developed by brendon avalos. It was based off a vue blog using markdown by joseph harvey angeles.</div>
-      </div> 
+    <div class="colophon" :class="{ active: colophonSwitch }">
+      <div class="close" @click="colophonSelected('close')">
+        <em>(CLOSE)</em>
+      </div>
+      "Free work" is set in Xanh Mono and arial. This site was designed and
+      developed by brendon avalos. It was based off a vue blog using markdown by
+      joseph harvey angeles.
+    </div>
+  </div>
 </template>
 
 <script>
-
-
-
-
-import BLOGENTRIES from '@/statics/data/blogs.json'
-
- 
+import BLOGENTRIES from "@/statics/data/blogs.json";
 
 export default {
-  name: 'home',
+  name: "home",
   computed: {
     entries() {
-      return BLOGENTRIES
-    }
+      return BLOGENTRIES;
+    },
   },
-  
-  
-  }
 
+  methods: {
+    colophonSelected(state) {
+      if (state === "open") {
+        if (this.colophonSwitch === false) {
+          this.colophonSwitch = true;
+        } else {
+        }
+      } else if (state === "close") {
+        this.colophonSwitch = false;
+      }
+    },
+  },
 
-
-
-
+  data() {
+    return {
+      colophonSwitch: false,
+    };
+  },
+};
 </script>
 <style lang="scss" scoped>
-
-
-em{
-  font-family: 'Xanh Mono', monospace;
-  font-style: normal; 
+em {
+  font-family: "Xanh Mono", monospace;
+  font-style: normal;
   letter-spacing: 0rem;
-  }
+}
 
 .about {
   line-height: 1.25rem;
-  letter-spacing: -.02rem;
+  letter-spacing: -0.02rem;
 }
-
 
 .colophon {
-   display: absolute;
-  position:fixed;
-  background:black;
-  color:white;
-  bottom:1rem;
-  right:1rem;
-  width:20rem;
+  display: none;
+  position: fixed;
+  background: black;
+  color: white;
+  bottom: 1rem;
+  right: 1rem;
+  width: 20rem;
   text-transform: uppercase;
   line-height: 1.25rem;
-  font-size:1.25rem;
-  padding:1rem;
+  font-size: 1.25rem;
+  padding: 1rem;
 }
 
-
+.active {
+  display: inline;
+}
 
 .home {
-  width:50%;
-  height:100vh;
-  box-sizing:border-box;
-  float:right;
-  background-color:#EDEDED;
-  padding:1rem;
+  width: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+  float: right;
+  background-color: #ededed;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
-   flex-direction:column;
+  flex-direction: column;
 }
-
 
 .left {
   text-align: left;
 }
-
-
 
 .headline {
   font-family: Arial;
   letter-spacing: -1px;
   text-transform: uppercase;
   font-size: 1.75rem;
-
 }
 img {
   display: block;
@@ -120,108 +134,90 @@ img {
 
 h2 {
   color: black;
-  font-size:1.5rem;
- letter-spacing: -1px;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
   margin-bottom: 2rem;
-  font-weight:500;
+  font-weight: 500;
 }
 
 h3 {
   color: black;
-  font-size:.85rem;
+  font-size: 0.85rem;
   line-height: 1rem;
   font-weight: 500;
   cursor: pointer;
-  margin:0;
-   display: inline-block;
-  letter-spacing: .01rem;
-  text-transform: uppercase; 
+  margin: 0;
+  display: inline-block;
+  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+}
 
-  }
-
-  .date {
-    opacity:1;
-    font-family: 'Xanh Mono', monospace;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom:.5rem;
-
-  }
-
-
+.date {
+  opacity: 1;
+  font-family: "Xanh Mono", monospace;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
 
 p {
-  font-size: .85rem;
-  margin-top: .4rem;
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
 }
 
-
-
-
-
-.title{
+.title {
   margin-bottom: 1rem;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
-.group{
-  
-  width:100%;
-  display:flex;
+.group {
+  width: 100%;
+  display: flex;
   flex-wrap: wrap;
-
 }
 
-.entry{
-   font-size: .85rem;
-    border: 1px solid black;
-    padding:1rem;
-    flex-grow: 4;
-    transition-duration: 10s;
-    margin-left:-1px;
-    margin-bottom:-1px;
+.entry {
+  font-size: 0.85rem;
+  border: 1px solid black;
+  padding: 1rem;
+  flex-grow: 4;
+  transition-duration: 10s;
+  margin-left: -1px;
+  margin-bottom: -1px;
 
-
-  &:hover{
-     
-      background: rgb(75,255,255);
-background: linear-gradient(0deg, rgba(75,255,255,1) 0%, rgba(255,255,255,0) 100%);
-       cursor:pointer;
+  &:hover {
+    background: rgb(75, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(75, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    cursor: pointer;
   }
 }
-
-
-
 
 @media only screen and (max-width: 600px) {
-   .home {
-    width:100%;
-    min-height:50vh;
+  .home {
+    width: 100%;
+    min-height: 50vh;
     position: relative;
-    margin-top:90vh;
-  border-top: 1px solid black; 
-
+    margin-top: 90vh;
+    border-top: 1px solid black;
   }
 
-
-
   h3 {
-  font-size:.85rem;
-
+    font-size: 0.85rem;
   }
 
   .date {
-    opacity:1;
-    font-size: .85rem;
+    opacity: 1;
+    font-size: 0.85rem;
     font-weight: 500;
   }
 
-  .title{
-  font-size:.85rem;
-} 
-
+  .title {
+    font-size: 0.85rem;
+  }
 }
-
-
 </style>

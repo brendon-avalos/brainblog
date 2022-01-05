@@ -87,11 +87,6 @@ export default {
 
 
 
-.back:hover  {
- 
-} 
-
-
 
 
 
