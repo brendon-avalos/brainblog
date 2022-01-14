@@ -91,15 +91,16 @@ export default {
 
     p {
       font-size: 1rem;
-      line-height: 1.5;
+      line-height: 1.2;
       margin-block-start: 2em;
       margin-block-end: 0em;
-      font-family: "Xanh Mono", monospace;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 500;
       text-indent: 6rem;
     }
 
     code {
-      font-family: Arial;
+      font-family: "Xanh Mono", monospace;
       text-transform: uppercase;
     }
 
@@ -114,14 +115,12 @@ export default {
     }
 
     h1 {
-      font-family: Arial;
-      letter-spacing: -1px;
+      font-family: "Xanh Mono", monospace;
       text-transform: uppercase;
-      font-size: 1.75rem;
+      font-size: 1.25rem;
       font-weight: normal;
-      margin-bottom: 6rem;
+      margin-bottom: 0rem;
       margin-block-start: 0;
-      margin-left: 6rem;
     }
 
     h4 {
@@ -134,12 +133,10 @@ export default {
       margin-top: 3rem;
     }
     pre {
-      font-family: Arial;
-      letter-spacing: -1px;
+      font-family: "Xanh Mono", monospace;
       text-transform: uppercase;
       font-size: 1.75rem;
       font-weight: normal;
-
       width: 40%;
       padding: 1rem 1rem;
       float: right;

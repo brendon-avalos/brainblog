@@ -1,21 +1,13 @@
 <template>
-
   <div id="app">
     <div>
-     <intro/>
-     
+      <intro />
 
-
-      <router-view/>
-
+      <router-view />
     </div>
   </div>
-
 </template>
 <style scoped>
-
-
-
 #app {
   font-family: arial;
   -webkit-font-smoothing: antialiased;
@@ -23,21 +15,17 @@
   color: black;
   max-width: 100vw;
   margin: 0 auto;
-  font-size:1.25rem; 
-  line-height:150%;
+  font-size: 1.25rem;
+  line-height: 150%;
 }
 
-#app ::selection{
-    background: #4BFFFF;
+#app ::selection {
+  background: #4bffff;
 }
 
 @media only screen and (max-width: 600px) {
- #app {
-  line-height:140%;
- }
-
+  #app {
+    line-height: 140%;
+  }
 }
-
-
-
 </style>

@@ -1,5 +1,18 @@
 <template>
   <div class="home">
+    <div class="about">
+      <span class="arial"> "FREE WORK"</span> IS AN ONLINE SPACE FOR CREATIVE
+      EXERCISES AROUND WRITING AND DESIGN. THE GOAL IS TO TAKE AWAY THE
+      BOUNDARIES OF STRESS, MONEY, OR TIMELINES AND TO CREATE FREElY. IT’s STILL
+      WORK BUT HOPEFULLY IT FEELS A BIT MORE FREEING.
+      <div
+        class="viewcolophon"
+        @click="colophonSelected('open')"
+        style=" display:inline"
+      >
+        (VIEW COLOPHON)
+      </div>
+    </div>
     <div class="sections">
       <div
         v-for="(section, index) in Object.keys(entries)"
@@ -8,28 +21,11 @@
       >
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry" @click="$router.push({ name: entry.id })">
-            <div class="date">{{ entry.date }}</div>
             <div class="headline">{{ entry.title }}</div>
+            <div class="date">{{ entry.date }}</div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="about">
-      "FREE WORK"
-      <em
-        >IS AN ONLINE SPACE FOR CREATIVE EXERCISES AROUND WRITING AND DESIGN.
-        THE GOAL IS TO TAKE AWAY THE BOUNDARIES OF STRESS, MONEY, OR TIMELINES
-        AND TO CREATE FREElY. IT’s STILL WORK BUT HOPEFULLY IT FEELS A BIT MORE
-        FREEING.
-        <div
-          class="viewcolophon"
-          @click="colophonSelected('open')"
-          style=" display:inline"
-        >
-          (VIEW COLOPHON)
-        </div></em
-      >
     </div>
 
     <div class="colophon" :class="{ active: colophonSwitch }">
@@ -59,7 +55,6 @@ export default {
       if (state === "open") {
         if (this.colophonSwitch === false) {
           this.colophonSwitch = true;
-        } else {
         }
       } else if (state === "close") {
         this.colophonSwitch = false;
@@ -75,14 +70,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-em {
-  font-family: "Xanh Mono", monospace;
-  font-style: normal;
-  letter-spacing: 0rem;
+.arial {
+  font-family: arial !important;
 }
 
 .about {
+  font-family: "Xanh Mono", monospace;
   line-height: 1.25rem;
+  margin-bottom: 6rem;
   letter-spacing: -0.02rem;
 }
 
@@ -106,7 +101,6 @@ em {
 
 .home {
   width: 50%;
-  height: 100vh;
   box-sizing: border-box;
   float: right;
   background-color: #ededed;
@@ -121,10 +115,12 @@ em {
 }
 
 .headline {
-  font-family: Arial;
-  letter-spacing: -1px;
+  opacity: 1;
+  font-family: "Xanh Mono", monospace;
   text-transform: uppercase;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
 }
 img {
   display: block;
@@ -152,9 +148,13 @@ h3 {
   text-transform: uppercase;
 }
 
+.section {
+  width: 100%;
+}
+
 .date {
   opacity: 1;
-  font-family: "Xanh Mono", monospace;
+  font-family: arial;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 300;
@@ -175,13 +175,14 @@ p {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .entry {
-  font-size: 0.85rem;
   border: 1px solid black;
-  padding: 1rem;
-  flex-grow: 4;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem 1rem 1rem;
   transition-duration: 10s;
   margin-left: -1px;
   margin-bottom: -1px;
