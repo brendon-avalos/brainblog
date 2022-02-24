@@ -22,7 +22,7 @@
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry" @click="$router.push({ name: entry.id })">
             <div class="headline">{{ entry.title }}</div>
-            <div class="date">{{ entry.date }}</div>
+            <div class="index">{{ entry.index }}</div>
           </div>
         </div>
       </div>
@@ -152,7 +152,7 @@ h3 {
   width: 100%;
 }
 
-.date {
+.index {
   opacity: 1;
   font-family: arial;
   text-transform: uppercase;
