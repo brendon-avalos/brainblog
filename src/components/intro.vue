@@ -1,313 +1,231 @@
-
-
-
-<template> 
-
-
-<div class="intro-top">
-
-      <div class="intro-image">
-        
+<template>
+  <div class="intro">
+    <div class="container">
+      <div class="header t-body">
+        <div>a <span class="t-uppercase">collection</span></div>
+        <div>of <span class="t-uppercase t-italic">exercises</span></div>
+        <div>for</div>
+        <div><span class="t-uppercase t-italic">reshaping </span>your</div>
       </div>
-    	<div class="marquee"> 
-        <div class="message-box">
-    <div class="message">
-      ALWAYS BE FREE IT’S NOW OR NEVER DAWG.
+      <div class="counter">
+        <div class="reality t-body t-uppercase">
+          <div class="quote1">
+            <img src="@/assets/quote1.svg" alt="quote mark" />
+          </div>
+          <div class="text">reality</div>
+          <div class="quote2">
+            <img src="@/assets/quote2.svg" alt="quote mark" />
+          </div>
+        </div>
+        <img src="@/assets/counter.svg" alt="counter" />
+      </div>
+      <div class="info">
+        <div class="about t-text">
+          <span class="t-uppercase t-italic t-body about-margin">About</span>
+          "Free work" is an online space for creative exercises around writing
+          and design. The goal is to take away the boundaries of stress, money,
+          or timelines and to create freely. It’s still work but hopefully it
+          feels a bit more freeing. (view colophon)
+        </div>
+        <div class="submit t-body">
+          <div class="submit-space">
+            <div><span class="t-uppercase t-italic">Submit</span></div>
+            <div><img src="@/assets/arrow.svg" alt="arrow" /></div>
+          </div>
+          <div class="exercise-space">
+            <div>an</div>
+            <div><span class="t-uppercase">exercise</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="situations">
+        <img src="@/assets/situations.svg" alt="situations" />
+        <div class="byline">
+          <div class="t-body title">
+            a <span class="t-uppercase t-italic">project</span> by
+          </div>
+          <div class="t-body t-uppercase text">Brendon Avalos</div>
+        </div>
+      </div>
     </div>
-    <div class="message-copy">
-     ALWAYS BE FREE IT’S NOW OR NEVER DAWG.
-    </div>
-    <div class="message-copy">
-     ALWAYS BE FREE IT’S NOW OR NEVER DAWG.
-    </div>
-    <div class="message-copy">
-    </div>
-   
   </div>
-        
-
-      </div>
-    
-    <div class="logo">
-          <div class="free">
-             <img src="../assets/free-logo.svg">
-          </div>
-         
-          <div class="work">
-            <img src="../assets/work.svg">
-          </div>
-    </div>
-    <div class="footer">
-      <div class="byline">
-        <em>by</em> brendon avalos<br>
-        Created In <em>2021</em>
-      </div>
-      <div class="title">
-        "PLEASE be free"
-      </div>
-      
-</div>
-
-
-
-</div>
 </template>
 
-
-
 <style scoped>
-
-
-em{
-  font-family: 'Xanh Mono', monospace;
-  font-style: normal; 
-     letter-spacing: 0rem;
-  }
-
-img, svg {
-  display: inline-block;
-
+.intro {
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  background: #1e1a1a;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: white;
 }
 
-svg {
-  display: inline-block;
+::selection {
+  background: #e6ff4d;
+  color: #1e1a1a;
 }
 
-   .intro-top {
-        width:50%;
-        height:100vh;
-        position:fixed;
-        background: rgb(75,255,255);
-        background: linear-gradient(180deg, rgba(75,255,255,1) 70%, rgba(255,255,255,1) 100%);
-        padding:1rem;
-        box-sizing: border-box;
-        }
-
-  .intro-image {
-        left:0;
-        top:0;
-        display: flex;
-        width:50%;
-        height:100%;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        -moz-box-shadow: 0 0 30px 5px #999;
-        -webkit-box-shadow: 0 0 30px 5px #999;
-
-        }
-
-
-
-  .logo{
-    
-        display: flex;
-        flex-flow: column wrap;
-        justify-content:space-between;
-        height:100%;
-  }
-
-  .work {
-        position: absolute;
-        bottom:0;
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom:3rem;
-        right:1rem;
-        display: none;
-        }
-
-
-      .work img {
-          width:90%;
-        }
-
-
-  .free {
-        position: absolute;
-        left:1rem;
-        margin-top:3rem;
-        width:90%;
-        display: none;
-
-
-        }
-
-
-
-  .marquee {
-        font-family: 'Xanh Mono', monospace;
-        text-transform: uppercase;
-        font-size:1.75rem;
-        line-height:2rem;
-        position: fixed;
-        width:50%;
-        left:0;
-        top:1rem;
-        overflow: hidden;
-
-        }
-
-.message-box {
-        position: relative;
-        display: flex;
-        animation: marquee 10s linear infinite;
-        }
-
-
-
-.message {
-        white-space: nowrap;
-        width: 700px;
-        text-align: center;
-        margin-left:1rem;
-        }
-
-.message-copy {
- 
-  white-space: nowrap;
-  width: 700px;
-  text-align: center;
-   margin-left:1rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 1%;
+  box-sizing: border-box;
 }
 
-
-@keyframes marquee {
-  from { transform: translateX(0px) }
-  to { transform: translateX(-700px) }
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+.counter {
+  flex-grow: 1;
+  width: 100%;
+}
 
+.counter img {
+  height: 0;
+  width: 100%;
+  min-height: 100%;
+}
 
-img   {
-      width:100%;
-      }
+.reality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 28%;
+  height: 18%;
+  right: 8vw;
+}
 
+.reality img {
+  height: 100%;
+}
 
-  .footer {
-    left:0;
-    position: absolute;
-    padding:0rem 1rem 0rem 1rem;
-    bottom:1rem;
-    text-transform: uppercase;
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
+.reality .quote1 {
+  align-self: flex-start;
+}
 
-    }
+.reality .text {
+  align-self: center;
+  transform: rotate(-25deg);
+}
 
+.reality .quote2 {
+  align-self: flex-end;
+}
 
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  justify-content: space-between;
+}
 
-  .byline{
-    line-height: 1.25rem;
-    letter-spacing: -.02rem;
-    align-self: flex-end;
-    }
+.about {
+  width: 70%;
+  padding: 10px;
+  border: 1px white solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
 
-  .title
-    {
-     font-family: Arial;
-     letter-spacing: -1px;
-     text-transform: uppercase;
-     font-size: 1.75rem;
-     align-self: flex-end;
-    }
+.about-margin {
+  margin-right: 40px;
+}
 
+.submit {
+  background: #e6ff4d;
+  color: #1e1a1a;
+  width: 30%;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% / 50%;
+}
 
+.submit-space {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
 
+.exercise-space {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
 
+.situations {
+  flex-grow: 1;
+  width: 100%;
+}
 
+.situations img {
+  height: 0;
+  width: 100%;
+  min-height: 100%;
+}
 
-@media only screen and (max-width: 600px) {
-   .intro-top {
-    width:100%;
-    height:90vh;
+.byline {
+  position: absolute;
+  width: 30%;
+  height: 8%;
+  bottom: 2%;
+  left: 16.8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  justify-content: flex-end;
+}
+
+.byline .title {
+  align-self: flex-start;
+}
+
+.byline .text {
+  align-self: flex-end;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro {
+    width: 100%;
+    height: 93vh;
     position: fixed;
-    z-index: -100;
-    font-size: .85rem;
-    border-right: 0px solid black;
+    background: #1e1a1a;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: white;
   }
 
+  .container {
+    gap: 1rem;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 1rem;
+  }
 
   .about {
-  font-family: 'Xanh Mono', monospace;
-  text-transform: uppercase;
-  font-size:1.5rem;
-  line-height:2rem;
+    width: 100%;
   }
-
-
-
-  .scribble{
-  position: absolute;
-  width:90%;
-  bottom:0%;
-  right:2vw;
-  z-index: 2;
-  }
-
-  .yellowsquare 
-{
-  position: absolute;
-  top:25%;
-  left:50%;
-  width:35%;
-  height:35%;
-  background: #F1F43D;
-  z-index: 1;
-}
-
-
-
-
-  .animationcontainer {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width:100%;
-  height:100%;
-}
-
-.circle{
-  position:fixed;
-  width:94vw;
-  height:16vw;
-  transform: rotate(-160deg);
-  top:20%;
-  margin:auto;
-  border-radius: 100%;
-  border: 1px solid black;
-  animation: circleanimation 6s cubic-bezier(0.85, 0, 0.15, 1) infinite alternate;
-  
-}
-
-
-}
-
-
-@media only screen and (min-width: 1024px) {
-   
-  #scribblepath {
-    stroke-width:1.5;
+  .submit {
+    width: 100%;
+    height: 5rem;
+    padding: 0 3rem;
+    flex-direction: row;
+    box-sizing: border-box;
   }
 }
-@media only screen and (min-width: 1200px) {
-   
-  #scribblepath {
-  stroke-width:1;
-  }
-}
-
-
-@media only screen and (min-width: 1600px) {
-   
-  #scribblepath {
-  stroke-width:.8;
-  }
-}
-
-
 </style>
-

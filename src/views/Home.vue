@@ -1,17 +1,7 @@
 <template>
   <div class="home">
-    <div class="about">
-      <span class="arial"> "FREE WORK"</span> IS AN ONLINE SPACE FOR CREATIVE
-      EXERCISES AROUND WRITING AND DESIGN. THE GOAL IS TO TAKE AWAY THE
-      BOUNDARIES OF STRESS, MONEY, OR TIMELINES AND TO CREATE FREElY. IT’s STILL
-      WORK BUT HOPEFULLY IT FEELS A BIT MORE FREEING.
-      <div
-        class="viewcolophon"
-        @click="colophonSelected('open')"
-        style=" display:inline"
-      >
-        (VIEW COLOPHON)
-      </div>
+    <div class="about t-body t-uppercase">
+      <div>Index</div>
     </div>
     <div class="sections">
       <div
@@ -21,11 +11,17 @@
       >
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry" @click="$router.push({ name: entry.id })">
-            <div class="headline">{{ entry.title }}</div>
-            <div class="index">{{ entry.index }}</div>
+            <div class="index t-body t-uppercase">[{{ entry.index }}]</div>
+            <div class="headline t-body">{{ entry.title }}</div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="footer t-text">
+      Inspired from reading Marshal Mccluhans “The Medium is the Massage” as
+      well as the continuous curiousity of Ellis Marte. This website uses
+      Feeeeeels Fuzzy by Jack Fahrenstock and Xanh Mono by YELLOW TYPE. It was
+      coded in Vue using a project by JOSEPH HARVEY ANGELES as the framework.
     </div>
 
     <div class="colophon" :class="{ active: colophonSwitch }">
@@ -70,15 +66,15 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.arial {
-  font-family: arial !important;
+::selection {
+  background: #e6ff4d;
+  color: #1e1a1a;
 }
 
 .about {
-  font-family: "Xanh Mono", monospace;
-  line-height: 1.25rem;
-  margin-bottom: 6rem;
-  letter-spacing: -0.02rem;
+  background: fff;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .colophon {
@@ -95,80 +91,22 @@ export default {
   padding: 1rem;
 }
 
-.active {
-  display: inline;
-}
-
 .home {
   width: 50%;
   box-sizing: border-box;
   float: right;
-  background-color: #ededed;
-  padding: 1rem;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.left {
-  text-align: left;
-}
-
-.headline {
-  opacity: 1;
-  font-family: "Xanh Mono", monospace;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-}
-img {
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-}
-
-h2 {
-  color: black;
-  font-size: 1.5rem;
-  letter-spacing: -1px;
-  margin-bottom: 2rem;
-  font-weight: 500;
-}
-
-h3 {
-  color: black;
-  font-size: 0.85rem;
-  line-height: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  margin: 0;
-  display: inline-block;
-  letter-spacing: 0.01rem;
-  text-transform: uppercase;
+.sections {
+  margin-top: 5rem;
 }
 
 .section {
   width: 100%;
-}
-
-.index {
-  opacity: 1;
-  font-family: arial;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  font-size: 0.85rem;
-  margin-top: 0.4rem;
-}
-
-.title {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
 }
 
 .group {
@@ -179,46 +117,51 @@ p {
 }
 
 .entry {
-  border: 1px solid black;
   display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 1rem 1rem 1rem;
-  transition-duration: 10s;
-  margin-left: -1px;
-  margin-bottom: -1px;
+  padding: 0.25rem 1rem;
+  gap: 1em;
 
   &:hover {
-    background: rgb(75, 255, 255);
     background: linear-gradient(
       0deg,
-      rgba(75, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
+      rgba(230, 270, 77, 1) 100%,
+      rgba(230, 270, 77, 1) 100%
     );
     cursor: pointer;
   }
 }
 
-@media only screen and (max-width: 600px) {
+// .section:nth-child(even) {
+//   background: #f4f4f4;
+// }
+
+.footer {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  bottom: 0;
+  background: #d9cfc1;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
   .home {
     width: 100%;
     min-height: 50vh;
     position: relative;
-    margin-top: 90vh;
-    border-top: 1px solid black;
+    margin-top: 93vh;
   }
 
-  h3 {
-    font-size: 0.85rem;
+  .footer {
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+    left: 0%;
   }
 
-  .date {
-    opacity: 1;
-    font-size: 0.85rem;
-    font-weight: 500;
-  }
-
-  .title {
-    font-size: 0.85rem;
+  .sections {
+    margin-top: 1rem;
   }
 }
 </style>
