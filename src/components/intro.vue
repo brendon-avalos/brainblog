@@ -152,6 +152,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 50% / 50%;
+  transform: rotate(0deg);
+  transition: all 1s ease-out;
+}
+
+.submit:hover {
+  transform: rotate(-20deg);
 }
 
 .submit-space {

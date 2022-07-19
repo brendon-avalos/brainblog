@@ -11,8 +11,8 @@
       >
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry" @click="$router.push({ name: entry.id })">
-            <div class="index t-body t-uppercase">[{{ entry.index }}]</div>
-            <div class="headline t-body">{{ entry.title }}</div>
+            <div class="index t-text t-uppercase">[{{ entry.index }}]</div>
+            <div class="headline t-text">{{ entry.title }}</div>
           </div>
         </div>
       </div>
@@ -72,9 +72,9 @@ export default {
 }
 
 .about {
-  background: fff;
   box-sizing: border-box;
   padding: 1rem;
+  background: #e6ff4d;
 }
 
 .colophon {
@@ -102,7 +102,7 @@ export default {
 }
 
 .sections {
-  margin-top: 5rem;
+  margin-top: 0;
 }
 
 .section {
@@ -131,9 +131,9 @@ export default {
   }
 }
 
-// .section:nth-child(even) {
-//   background: #f4f4f4;
-// }
+.section:nth-child(even) {
+  background: #f4f4f4;
+}
 
 .footer {
   position: absolute;
