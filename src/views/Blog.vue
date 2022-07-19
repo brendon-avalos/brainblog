@@ -3,6 +3,7 @@
     <div class="back-background"></div>
     <router-link to="/" tag="a" class="back">BACK TO INDEX</router-link>
     <div class="fakeback"></div>
+
     <div
       v-for="(section, index) in Object.keys(entries)"
       :key="index"
@@ -36,7 +37,7 @@ export default {
 .blog {
   width: 50%;
   float: right;
-  background-color: #fff;
+  background-color: #f4f4f4;
   padding: 1rem;
   overflow-x: hidden;
   min-height: 100vh;
@@ -84,19 +85,21 @@ export default {
   }
 
   /deep/ {
+    ::selection {
+      background: #e6ff4d;
+      color: #1e1a1a;
+    }
+
     img {
       max-width: 100%;
       min-width: 100%;
     }
 
     p {
-      font-size: 1rem;
-      line-height: 1.2;
-      margin-block-start: 2em;
-      margin-block-end: 0em;
-      font-family: "Courier New", Courier, monospace;
-      font-weight: 500;
-      text-indent: 6rem;
+      font-family: "Xanh Mono", monospace;
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      font-weight: normal;
     }
 
     code {
@@ -117,7 +120,8 @@ export default {
     h1 {
       font-family: "Xanh Mono", monospace;
       text-transform: uppercase;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+      text-decoration: underline;
       font-weight: normal;
       margin-bottom: 0rem;
       margin-block-start: 0;
@@ -150,7 +154,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .blog {
     width: 100%;
     min-height: 50vh;
@@ -162,7 +166,10 @@ export default {
 
     /deep/ {
       p {
+        font-family: "Xanh Mono", monospace;
         font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: normal;
       }
       ul {
         font-size: 0.85rem;

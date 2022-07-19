@@ -1,4 +1,4 @@
-### ![alt text](https://d2w9rnfcy7mm78.cloudfront.net/11859007/original_d5a2f1e96422eb5ccd9e8c9a7e15c59b.jpg?1620277753?bc=0)
+### ![alt text](@/assets/derive.svg)
 
 # prescribed feelings
 
