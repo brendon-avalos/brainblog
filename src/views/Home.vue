@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <div class="about t-body">
-      <div>Index</div>
+    <div class="about">
+      <div class="t-body">Index</div>
     </div>
     <div class="sections">
       <div
@@ -18,9 +18,9 @@
       </div>
     </div>
 
-    <div class="colophon" :class="{ active: colophonSwitch }">
-      <div class="close" @click="colophonSelected('close')">
-        <em>(CLOSE)</em>
+    <div class="colophon t-body" :class="{ active: colophonSwitch }">
+      <div class="close t-italic" @click="colophonSelected('close')">
+        View Credits
       </div>
       "Free work" is set in Xanh Mono and arial. This site was designed and
       developed by brendon avalos. It was based off a vue blog using markdown by
@@ -73,17 +73,22 @@ export default {
 }
 
 .colophon {
-  display: none;
   position: fixed;
-  background: black;
-  color: white;
-  bottom: 1rem;
-  right: 1rem;
-  width: 20rem;
-  text-transform: uppercase;
-  line-height: 1.25rem;
-  font-size: 1.25rem;
-  padding: 1rem;
+  background: #e6ff4d;
+  color: #1e1a1a;
+  bottom: -20rem;
+  right: 0rem;
+  padding: 2rem 10rem 10rem 10rem;
+  width: 50vw;
+  text-align: center;
+  display: none;
+  min-height: 20vh;
+  gap: 4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 50% / 50%;
+  box-sizing: border-box;
 }
 
 .home {

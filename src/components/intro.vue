@@ -2,10 +2,12 @@
   <div class="intro">
     <div class="container">
       <div class="header t-body">
-        <div>a <span class="t-uppercase">collection</span></div>
-        <div>of <span class="t-uppercase t-italic">exercises</span></div>
+        <div>a <span class="t-italic">curated</span></div>
+        <div class="t-italic t-uppercase">
+          collection <span class="t-uppercase t-italic"></span>
+        </div>
         <div>for</div>
-        <div><span class="t-uppercase t-italic">reshaping </span>your</div>
+        <div><span class="t-uppercase t-italic">reimagining</span></div>
       </div>
       <div class="counter">
         <div class="reality t-body t-uppercase">
@@ -22,10 +24,11 @@
       <div class="info">
         <div class="about t-text">
           <span class="t-uppercase t-italic t-body about-margin">About</span>
-          "Free work" is an online space for creative exercises around writing
-          and design. The goal is to take away the boundaries of stress, money,
-          or timelines and to create freely. It’s still work but hopefully it
-          feels a bit more freeing. (view colophon)
+          "Counter Situations" is a collection of essays, articles & experiments
+          that inspire us reimagine the present. The purpose of this "web zine"
+          is to offer ideas around imagining a different reality from the one we
+          are prescribed. How can we move forward if we can't imagine what's
+          next?
         </div>
         <div class="submit t-body">
           <div class="submit-space">
@@ -34,7 +37,7 @@
           </div>
           <div class="exercise-space">
             <div>an</div>
-            <div><span class="t-uppercase">exercise</span></div>
+            <div><span class="t-uppercase">article</span></div>
           </div>
         </div>
       </div>
