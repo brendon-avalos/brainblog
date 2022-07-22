@@ -17,12 +17,6 @@
         </div>
       </div>
     </div>
-    <div class="footer t-text">
-      Inspired from reading Marshal Mccluhans “The Medium is the Massage” as
-      well as the continuous curiousity of Ellis Marte. This website uses
-      Feeeeeels Fuzzy by Jack Fahrenstock and Xanh Mono by YELLOW TYPE. It was
-      coded in Vue using a project by JOSEPH HARVEY ANGELES as the framework.
-    </div>
 
     <div class="colophon" :class="{ active: colophonSwitch }">
       <div class="close" @click="colophonSelected('close')">
@@ -157,10 +151,12 @@ export default {
   }
 
   .about {
-    box-sizing: border-box;
-    padding: 2rem 1rem 10rem 1rem;
-    background: #dfbfff;
-    font-size: 64px;
+    padding: 1rem;
+    height: 25vh;
+  }
+
+  .sections {
+    height: 25vh;
   }
 
   .footer {
