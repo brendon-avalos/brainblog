@@ -1,20 +1,15 @@
 <template>
   <div class="blog">
     <div class="back-background"></div>
-    <router-link to="/" tag="a" class="back">BACK TO INDEX</router-link>
-    <div class="fakeback"></div>
+    <router-link to="/" tag="a" class="back t-body"
+      ><div><img class="arrow" src="@/assets/arrow.svg" alt="arrow" /></div
+    ></router-link>
 
     <div
       v-for="(section, index) in Object.keys(entries)"
       :key="index"
       class="group"
-    >
-      <div
-        class="section"
-        v-for="entry in entries[section]"
-        :key="entry.id"
-      ></div>
-    </div>
+    ></div>
     <router-view />
   </div>
 </template>
@@ -43,37 +38,34 @@ export default {
   min-height: 100vh;
   box-sizing: border-box;
 
-  .fakeback {
-    position: relative;
-    color: black;
-    margin-bottom: 5rem;
-    text-decoration: none;
-    font-size: 1rem;
-    display: inline-block;
-    visibility: hidden;
+  .arrow {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
 
-  .back-background {
-    position: fixed;
-    width: 50%;
-    height: 4rem;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-  }
+  // .back-background {
+  //   height: 2rem;
+  //   background: #dfbfff;
+  //   position: fixed;
+  //   width: 50%;
+  //   top: 0;
+  //   left: 50%;
+  // }
   .back {
     position: fixed;
     color: black;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    padding: 1rem;
+    background: #dfbfff;
     margin-bottom: 5rem;
-    line-height: 2rem;
-    text-decoration: none;
     display: inline-block;
-    font-size: 1rem;
-    border: 1px solid transparent;
-    font-family: Arial;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    font-size: 1.75rem;
+    transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+    transform-origin: top left;
+  }
+
+  .back:hover {
+    transform: scale(1.5, 1);
   }
 
   svg path {
@@ -97,8 +89,8 @@ export default {
 
     p {
       font-family: "Xanh Mono", monospace;
-      font-size: 1.5rem;
-      line-height: 1.75rem;
+      font-size: 1rem;
+      line-height: 1.25rem;
       font-weight: normal;
     }
 
@@ -121,21 +113,25 @@ export default {
       font-family: "Xanh Mono", monospace;
       text-transform: uppercase;
       font-size: 1.5rem;
-      text-decoration: underline;
       font-weight: normal;
+      font-style: italic;
       margin-bottom: 0rem;
       margin-block-start: 0;
     }
 
-    h4 {
+    // header
+
+    h6 {
       font-family: "Xanh Mono", monospace;
-      text-transform: uppercase;
-      font-size: 1rem;
-      margin-bottom: 0;
-      margin-left: 6rem;
-      font-weight: 300;
-      margin-top: 3rem;
+      font-size: 6rem;
+      line-height: 6rem;
+      margin-left: 10rem;
+      font-weight: normal;
+      font-style: italic;
+      margin-bottom: 0rem;
+      margin-block-start: 0;
     }
+
     pre {
       font-family: "Xanh Mono", monospace;
       text-transform: uppercase;
