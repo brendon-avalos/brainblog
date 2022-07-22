@@ -153,11 +153,11 @@
   justify-content: center;
   border-radius: 50% / 50%;
   transform: rotate(0deg);
-  transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+  transition: all 0.8s cubic-bezier(0.85, 0, 0.15, 1);
 }
 
 .submit:hover {
-  transform: rotate(-20deg);
+  transform: rotate(-20deg) scale(1.2, 0.8);
 }
 
 .submit-space {
