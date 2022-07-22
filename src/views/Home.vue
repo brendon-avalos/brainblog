@@ -73,7 +73,8 @@ export default {
 
 .about {
   box-sizing: border-box;
-  padding: 25rem 1rem 0.5rem 1rem;
+  height: 50vh;
+  padding: 1rem 1rem 0.5rem 1rem;
   background: #dfbfff;
 }
 
@@ -138,10 +139,10 @@ export default {
 }
 
 .footer {
+  display: none;
   position: fixed;
   left: 50%;
   width: 50%;
-  bottom: -10vh;
   background: #d9cfc1;
   box-sizing: border-box;
   padding: 1rem;
