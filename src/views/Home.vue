@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="about t-body t-uppercase">
+    <div class="about t-body">
       <div>Index</div>
     </div>
     <div class="sections">
@@ -73,8 +73,8 @@ export default {
 
 .about {
   box-sizing: border-box;
-  padding: 1rem;
-  background: #e6ff4d;
+  padding: 25rem 1rem 0.5rem 1rem;
+  background: #dfbfff;
 }
 
 .colophon {
@@ -120,8 +120,10 @@ export default {
   display: flex;
   padding: 0.25rem 1rem;
   gap: 1em;
+  transition: all 0.8s cubic-bezier(0.85, 0, 0.15, 1);
 
   &:hover {
+    padding-left: 4rem;
     background: linear-gradient(
       0deg,
       rgba(230, 270, 77, 1) 100%,
@@ -136,10 +138,10 @@ export default {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   left: 50%;
   width: 50%;
-  bottom: 0;
+  bottom: -10vh;
   background: #d9cfc1;
   box-sizing: border-box;
   padding: 1rem;
@@ -153,15 +155,18 @@ export default {
     margin-top: 93vh;
   }
 
+  .about {
+    box-sizing: border-box;
+    padding: 2rem 1rem 10rem 1rem;
+    background: #dfbfff;
+    font-size: 64px;
+  }
+
   .footer {
     position: relative;
     margin-top: 2rem;
     width: 100%;
     left: 0%;
-  }
-
-  .sections {
-    margin-top: 1rem;
   }
 }
 </style>
