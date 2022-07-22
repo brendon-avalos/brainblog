@@ -25,8 +25,8 @@
         <div class="about t-text">
           <span class="t-uppercase t-italic t-body about-margin">About</span>
           "Counter Situations" is a collection of essays, articles & experiments
-          that inspire us reimagine the present. The purpose of this "web zine"
-          is to offer ideas around imagining a different reality from the one we
+          that inspire us reimagine the present. The purpose of this "e-zine" is
+          to offer ideas around imagining a different reality from the one we
           are prescribed. How can we move forward if we can't imagine what's
           next?
         </div>
@@ -45,7 +45,7 @@
         <img src="@/assets/situations.svg" alt="situations" />
         <div class="byline">
           <div class="t-body title">
-            a <span class="t-uppercase t-italic">project</span> by
+            an <span class="t-uppercase t-italic">E-Zine</span> by
           </div>
           <div class="t-body t-uppercase text">Brendon Avalos</div>
         </div>
