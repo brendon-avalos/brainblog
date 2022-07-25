@@ -33,7 +33,9 @@
         <div class="submit t-body">
           <div class="submit-space">
             <div><span class="t-uppercase t-italic">Submit</span></div>
-            <div><img src="@/assets/arrow.svg" alt="arrow" /></div>
+            <div>
+              <img class="arrow" src="@/assets/arrow.svg" alt="arrow" />
+            </div>
           </div>
           <div class="exercise-space">
             <div>an</div>
@@ -169,6 +171,10 @@
   width: 70%;
 }
 
+.arrow {
+  width: 100%;
+}
+
 .exercise-space {
   display: flex;
   justify-content: space-between;
@@ -194,7 +200,7 @@
   left: 16.8vw;
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  gap: 0%;
   justify-content: flex-end;
 }
 
