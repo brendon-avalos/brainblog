@@ -168,6 +168,7 @@
   display: flex;
   justify-content: space-between;
   width: 70%;
+  gap: 10%;
 }
 
 .arrow {
@@ -214,7 +215,7 @@
 @media only screen and (max-width: 800px) {
   .intro {
     width: 100%;
-    height: 93vh;
+    height: 95vh;
     position: fixed;
     background: #1e1a1a;
     padding: 1rem;
@@ -240,6 +241,7 @@
     padding: 0 3rem;
     flex-direction: row;
     box-sizing: border-box;
+    font-size: 1.25em;
   }
 
   .byline {

@@ -18,13 +18,13 @@
       </div>
     </div>
 
-    <div class="colophon t-body" :class="{ active: colophonSwitch }">
-      <div class="close t-italic" @click="colophonSelected('close')">
-        View Credits
+    <div class="marquee">
+      <div class="marquee-text t-text">
+        "Counter Situations" is set in Xanh Mono by Yellow Type Foundry &
+        Feeeels Fuzzy by Jack Fahnestock. This site was designed and developed
+        by Brendon Avalos & based off a vue blog using markdown by Joseph Harvey
+        Angeles.
       </div>
-      "Free work" is set in Xanh Mono and arial. This site was designed and
-      developed by brendon avalos. It was based off a vue blog using markdown by
-      joseph harvey angeles.
     </div>
   </div>
 </template>
@@ -59,6 +59,7 @@ export default {
   },
 };
 </script>
+
 <style lang="scss" scoped>
 ::selection {
   background: #e6ff4d;
@@ -147,12 +148,50 @@ export default {
   padding: 1rem;
 }
 
+// marquee
+
+@keyframes marquee-text {
+  0% {
+    margin-left: 50%;
+    transform: translateX(0%);
+  }
+  100% {
+    margin-left: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  background: #e6ff4d;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+}
+
+.marquee-text {
+  animation: marquee-text 30s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+  width: fit-content;
+  padding: 0;
+}
+
+.marquee-text:hover {
+  animation-play-state: paused;
+}
+
+.text-styling {
+  background-color: lightblue;
+  padding: 1em;
+}
+
 @media only screen and (max-width: 800px) {
   .home {
     width: 100%;
-    min-height: 50vh;
+    height: 100vh;
     position: relative;
-    margin-top: 93vh;
+    margin-top: 95vh;
   }
 
   .about {
@@ -169,6 +208,21 @@ export default {
     margin-top: 2rem;
     width: 100%;
     left: 0%;
+  }
+
+  .marquee {
+    position: relative;
+  }
+
+  @keyframes marquee-text {
+    0% {
+      margin-left: 100%;
+      transform: translateX(0%);
+    }
+    100% {
+      margin-left: 0;
+      transform: translateX(-100%);
+    }
   }
 }
 </style>
