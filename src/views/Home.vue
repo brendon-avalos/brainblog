@@ -11,7 +11,7 @@
       >
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry" @click="$router.push({ name: entry.id })">
-            <div class="index t-text t-uppercase">[{{ entry.index }}]</div>
+            <div class="index t-text">[{{ entry.index }}]</div>
             <div class="headline t-text">{{ entry.title }}</div>
           </div>
         </div>
@@ -71,6 +71,8 @@ export default {
   height: 50vh;
   padding: 1rem 1rem 0.5rem 1rem;
   background: #dfbfff;
+  display: flex;
+  align-items: flex-end;
 }
 
 .colophon {
@@ -197,6 +199,7 @@ export default {
   .about {
     padding: 1rem;
     height: 50vh;
+    align-items: flex-start;
   }
 
   .sections {
