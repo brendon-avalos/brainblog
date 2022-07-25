@@ -157,11 +157,11 @@ export default {
 
   .about {
     padding: 1rem;
-    height: 25vh;
+    height: 50vh;
   }
 
   .sections {
-    height: 25vh;
+    height: 50vh;
   }
 
   .footer {

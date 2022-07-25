@@ -25,10 +25,9 @@
         <div class="about t-text">
           <span class="t-uppercase t-italic t-body about-margin">About</span>
           "Counter Situations" is a collection of essays, articles & experiments
-          that inspire us reimagine the present. The purpose of this "e-zine" is
-          to offer ideas around imagining a different reality from the one we
-          are prescribed. How can we move forward if we can't imagine what's
-          next?
+          that aim to inspire and help us reimagine and recontextualize our
+          current way of life. How can we move forward if we can't imagine
+          what's next?
         </div>
         <div class="submit t-body">
           <div class="submit-space">
@@ -45,12 +44,12 @@
       </div>
       <div class="situations">
         <img src="@/assets/situations.svg" alt="situations" />
-        <div class="byline">
-          <div class="t-body title">
-            an <span class="t-uppercase t-italic">E-Zine</span> by
-          </div>
-          <div class="t-body t-uppercase text">Brendon Avalos</div>
+      </div>
+      <div class="byline">
+        <div class="t-body title">
+          an <span class="t-uppercase t-italic">E-Zine</span> by
         </div>
+        <div class="t-body t-uppercase text">Brendon Avalos</div>
       </div>
     </div>
   </div>
@@ -241,6 +240,46 @@
     padding: 0 3rem;
     flex-direction: row;
     box-sizing: border-box;
+  }
+
+  .byline {
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: 0%;
+    left: 0vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0%;
+    justify-content: space-between;
+  }
+
+  .byline .title {
+    align-self: flex-end;
+  }
+
+  .byline .text {
+    align-self: flex-end;
+  }
+
+  .reality {
+    width: 35%;
+    height: 15%;
+    top: 4%;
+    right: 13vw;
+  }
+
+  .reality .quote1 {
+    align-self: flex-start;
+  }
+
+  .reality .text {
+    align-self: center;
+    transform: rotate(-25deg);
+  }
+
+  .reality .quote2 {
+    align-self: flex-end;
   }
 }
 </style>
