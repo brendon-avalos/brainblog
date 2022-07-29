@@ -215,7 +215,7 @@
 @media only screen and (max-width: 800px) {
   .intro {
     width: 100%;
-    height: 95vh;
+    height: calc(100vh - 1.7rem);
     position: fixed;
     background: #1e1a1a;
     padding: 1rem;
@@ -241,7 +241,7 @@
     padding: 0 3rem;
     flex-direction: row;
     box-sizing: border-box;
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
 
   .byline {

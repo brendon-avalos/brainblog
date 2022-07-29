@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <div class="about">
-      <div class="t-body">Index</div>
-    </div>
-    <div class="sections">
-      <div
-        v-for="(section, index) in Object.keys(entries)"
-        :key="index"
-        class="group"
-      >
-        <div class="section" v-for="entry in entries[section]" :key="entry.id">
-          <div class="entry" @click="$router.push({ name: entry.id })">
-            <div class="index t-text">[{{ entry.index }}]</div>
-            <div class="headline t-text">{{ entry.title }}</div>
+    <div>
+      <div class="about">
+        <div class="t-body">Index</div>
+      </div>
+      <div class="sections">
+        <div
+          v-for="(section, index) in Object.keys(entries)"
+          :key="index"
+          class="group"
+        >
+          <div
+            class="section"
+            v-for="entry in entries[section]"
+            :key="entry.id"
+          >
+            <div class="entry" @click="$router.push({ name: entry.id })">
+              <div class="index t-body">[{{ entry.index }}]</div>
+              <div class="headline t-body">{{ entry.title }}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -68,37 +74,17 @@ export default {
 
 .about {
   box-sizing: border-box;
-  height: 50vh;
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   background: #dfbfff;
   display: flex;
   align-items: flex-end;
-}
-
-.colophon {
-  position: fixed;
-  background: #e6ff4d;
-  color: #1e1a1a;
-  bottom: -20rem;
-  right: 0rem;
-  padding: 2rem 10rem 10rem 10rem;
-  width: 50vw;
-  text-align: center;
-  display: none;
-  min-height: 20vh;
-  gap: 4rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 50% / 50%;
-  box-sizing: border-box;
 }
 
 .home {
   width: 50%;
   box-sizing: border-box;
   float: right;
-  background-color: #fff;
+  background-color: #e6ff4d;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -127,17 +113,16 @@ export default {
 
   &:hover {
     padding-left: 4rem;
-    background: linear-gradient(
-      0deg,
-      rgba(230, 270, 77, 1) 100%,
-      rgba(230, 270, 77, 1) 100%
-    );
     cursor: pointer;
   }
 }
 
 .section:nth-child(even) {
   background: #f4f4f4;
+}
+
+.section:nth-child(odd) {
+  background: #fff;
 }
 
 .footer {
@@ -154,7 +139,7 @@ export default {
 
 @keyframes marquee-text {
   0% {
-    margin-left: 50%;
+    margin-left: 50vw;
     transform: translateX(0%);
   }
   100% {
@@ -192,34 +177,23 @@ export default {
   .home {
     width: 100%;
     height: 100vh;
+    justify-content: space-between;
     position: relative;
-    margin-top: 95vh;
+    margin-top: calc(100vh - 1.7rem);
   }
 
   .about {
-    padding: 1rem;
-    height: 50vh;
     align-items: flex-start;
-  }
-
-  .sections {
-    height: 50vh;
-  }
-
-  .footer {
-    position: relative;
-    margin-top: 2rem;
-    width: 100%;
-    left: 0%;
   }
 
   .marquee {
     position: relative;
+    bottom: 0;
   }
 
   @keyframes marquee-text {
     0% {
-      margin-left: 100%;
+      margin-left: 100vw;
       transform: translateX(0%);
     }
     100% {
