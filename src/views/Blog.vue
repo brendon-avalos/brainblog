@@ -111,7 +111,6 @@ export default {
 
     h1 {
       font-family: "Xanh Mono", monospace;
-      text-transform: uppercase;
       font-size: 1.5rem;
       font-weight: normal;
       font-style: italic;

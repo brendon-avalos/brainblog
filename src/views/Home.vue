@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+
     <div>
       <div class="about">
         <div class="t-body">Index</div>
@@ -19,6 +20,7 @@
               <div class="index t-body">[{{ entry.index }}]</div>
               <div class="headline t-body">{{ entry.title }}</div>
             </div>
+
           </div>
         </div>
       </div>
@@ -26,9 +28,9 @@
 
     <div class="marquee">
       <div class="marquee-text t-text">
-        "Counter Situations" is set in Xanh Mono by Yellow Type Foundry &
-        Feeeels Fuzzy by Jack Fahnestock. This site was designed and developed
-        by Brendon Avalos & based off a vue blog using markdown by Joseph Harvey
+        "Counter Situations" uses Xanh Mono by Yellow Type Foundry & Feeeels
+        Fuzzy by Jack Fahnestock. This site was designed and developed by
+        Brendon Avalos & based off a vue blog using markdown by Joseph Harvey
         Angeles.
       </div>
     </div>
@@ -179,6 +181,7 @@ export default {
     height: 100vh;
     justify-content: space-between;
     position: relative;
+
     margin-top: calc(100vh - 1.7rem);
   }
 
@@ -188,6 +191,7 @@ export default {
 
   .marquee {
     position: relative;
+
     bottom: 0;
   }
 
