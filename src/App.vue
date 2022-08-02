@@ -56,14 +56,14 @@ svg {
 
 .t-body {
   font-family: "Xanh Mono", monospace;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: 1.35rem;
+  line-height: 1.6rem;
   font-weight: normal;
 }
 
 .t-text {
   font-family: "Xanh Mono", monospace;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.25rem;
   font-weight: normal;
 }
