@@ -349,22 +349,14 @@ blurring animations */
 @keyframes blur {
   0% {
     filter: blur(0);
-    transform: translate3d(0, 0, 0);
   }
 
   7% {
     filter: blur(0.6rem);
-    transform: translate3d(0, 0, 0);
   }
 
   14% {
     filter: blur(0rem);
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    filter: blur(0rem);
-    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -382,117 +374,119 @@ blurring animations */
   animation-timing-function: ease-in-out;
   animation-delay: 0;
   overflow: visible;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-02 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 1s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-03 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 3s;
+  transform: rotateZ(360deg);
 }
 
 .blur-04 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 5s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-05 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 7s;
+  transform: rotateZ(360deg);
 }
 
 .blur-06 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 9s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-07 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 10s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-08 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 12s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-09 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 15s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-10 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 16s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-11 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 18s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-12 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 19s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-13 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 20s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-14 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 22s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-15 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 25s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-16 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 26s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 .blur-17 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 27s;
-  transform: translate3d(0, 0, 0);
+  transform: rotateZ(360deg);
 }
 
 /*
