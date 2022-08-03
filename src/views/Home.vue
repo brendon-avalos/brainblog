@@ -103,7 +103,7 @@ export default {
   width: 50%;
   box-sizing: border-box;
   float: right;
-  background-color: #fff;
+  background-color: #e6ff4d;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
