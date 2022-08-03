@@ -495,7 +495,7 @@ Responsive */
 @media only screen and (max-width: 800px) {
   .intro {
     width: 100%;
-    height: 95vh;
+    height: calc(100vh - 1.6rem);
     position: fixed;
     background: #1e1a1a;
     padding: 1rem;
