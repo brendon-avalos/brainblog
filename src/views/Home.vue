@@ -74,7 +74,6 @@ export default {
 
 .about {
   box-sizing: border-box;
-  height: 50vh;
   padding: 1rem 1rem 0.5rem 1rem;
   background: #dfbfff;
   display: flex;
@@ -206,12 +205,7 @@ export default {
 
   .about {
     padding: 1rem;
-    height: 50vh;
     align-items: flex-start;
-  }
-
-  .sections {
-    height: 50vh;
   }
 
   .footer {
