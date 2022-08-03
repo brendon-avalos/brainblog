@@ -187,7 +187,7 @@
   height: 100vh;
   position: fixed;
   background: #1e1a1a;
-  padding: 1rem;
+  padding: 0.4rem 1rem 1rem 1rem;
   box-sizing: border-box;
   color: white;
 }
@@ -236,7 +236,7 @@
   box-sizing: border-box;
   width: 28%;
   height: 18vh;
-  right: 8vw;
+  right: 7.5vw;
 }
 
 .reality img {
