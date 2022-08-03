@@ -173,7 +173,7 @@
       </div>
       <div class="byline">
         <div class="t-body title">
-          an <span class="t-italic">E-Zine</span> by
+          an <span class="t-uppercase t-italic">E-Zine</span> by
         </div>
         <div class="t-body t-uppercase text">Brendon Avalos</div>
       </div>
