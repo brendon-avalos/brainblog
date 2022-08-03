@@ -29,7 +29,7 @@
         "Counter Situations" uses Xanh Mono by Yellow Type Foundry & Feeeels
         Fuzzy by Jack Fahnestock. This site was designed and developed by
         Brendon Avalos & based off a vue blog using markdown by Joseph Harvey
-        Angeles.
+        Angeles. Change.
       </div>
     </div>
   </div>
