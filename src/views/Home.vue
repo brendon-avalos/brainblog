@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <div class="about">
-      <div class="t-body">Index</div>
-    </div>
-    <div class="sections">
-      <div
-        v-for="(section, index) in Object.keys(entries)"
-        :key="index"
-        class="group"
-      >
-        <div class="section" v-for="entry in entries[section]" :key="entry.id">
-          <div class="entry" @click="$router.push({ name: entry.id })">
-            <div class="index t-body">[{{ entry.index }}]</div>
-            <div class="headline t-body t-italic">{{ entry.title }}</div>
+    <div>
+      <div class="about">
+        <div class="t-body">Index</div>
+      </div>
+      <div class="sections">
+        <div
+          v-for="(section, index) in Object.keys(entries)"
+          :key="index"
+          class="group"
+        >
+          <div
+            class="section"
+            v-for="entry in entries[section]"
+            :key="entry.id"
+          >
+            <div class="entry" @click="$router.push({ name: entry.id })">
+              <div class="index t-body">[{{ entry.index }}]</div>
+              <div class="headline t-body t-italic">{{ entry.title }}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -179,7 +185,7 @@ export default {
     position: relative;
     background: #e6ff4d;
     margin-top: 95vh;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .about {
@@ -195,7 +201,7 @@ export default {
   }
 
   .marquee {
-    position: absolute;
+    position: relative;
     bottom: 0;
   }
 
