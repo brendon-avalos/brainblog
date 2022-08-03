@@ -26,10 +26,10 @@
 
     <div class="marquee">
       <div class="marquee-text t-text">
-        "Counter Situations" is set in Xanh Mono by Yellow Type Foundry &
-        Feeeels Fuzzy by Jack Fahnestock. This site was designed and developed
-        by Brendon Avalos & based off a vue blog using markdown by Joseph Harvey
-        Angeles.
+        "Counter Situations" uses Xanh Mono by Yellow Type Foundry & Feeeels
+        Fuzzy by Jack Fahnestock. This site was designed and developed by
+        Brendon Avalos & based off a vue blog using markdown by Joseph Harvey
+        Angeles. Change.
       </div>
     </div>
   </div>
