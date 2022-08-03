@@ -184,7 +184,7 @@ export default {
     height: 100vh;
     position: relative;
     background: #e6ff4d;
-    margin-top: 95vh;
+    margin-top: calc(100vh - 1.6rem);
     justify-content: space-between;
   }
 
