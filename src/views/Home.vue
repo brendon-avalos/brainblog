@@ -74,7 +74,7 @@ export default {
 
 .about {
   box-sizing: border-box;
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   background: #dfbfff;
   display: flex;
   align-items: flex-end;
@@ -132,17 +132,16 @@ export default {
 
   &:hover {
     padding-left: 4rem;
-    background: linear-gradient(
-      0deg,
-      rgba(230, 270, 77, 1) 100%,
-      rgba(230, 270, 77, 1) 100%
-    );
     cursor: pointer;
   }
 }
 
 .section:nth-child(even) {
   background: #f4f4f4;
+}
+
+.section:nth-child(odd) {
+  background: #fff;
 }
 
 .footer {
@@ -204,7 +203,6 @@ export default {
   }
 
   .about {
-    padding: 1rem;
     align-items: flex-start;
   }
 

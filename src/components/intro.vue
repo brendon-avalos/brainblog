@@ -360,15 +360,6 @@ blurring animations */
   }
 }
 
-/* .blurhover {
-  filter: blur(0rem) !important;
-  transition: all 0.8s ease-in-out !important;
-}
-
-.blurhover:hover {
-  filter: blur(0.5rem) !important;
-} */
-
 .blur-01 {
   animation: blur 28s infinite;
   animation-timing-function: ease-in-out;
