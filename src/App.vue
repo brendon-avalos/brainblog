@@ -35,6 +35,10 @@
   line-height: 150%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 em {
   font-family: "Xanh Mono", monospace;
   font-style: normal;
