@@ -15,7 +15,9 @@
             v-for="entry in entries[section]"
             :key="entry.id"
           >
-            <div class="entry" @click="$router.push({ name: entry.id })">
+            <div class="entry">
+              <!-- Add to entry for "blog functionality" 
+                @click="$router.push({ name: entry.id })" -->
               <div class="index t-body">[{{ entry.index }}]</div>
               <div class="headline t-body t-italic">
                 <a v-bind:href="[entry.link]">{{ entry.title }}</a>
