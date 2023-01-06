@@ -17,7 +17,9 @@
           >
             <div class="entry" @click="$router.push({ name: entry.id })">
               <div class="index t-body">[{{ entry.index }}]</div>
-              <div class="headline t-body t-italic">{{ entry.title }}</div>
+              <div class="headline t-body t-italic">
+                <a v-bind:href="[entry.link]">{{ entry.title }}</a>
+              </div>
             </div>
           </div>
         </div>
