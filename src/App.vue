@@ -99,6 +99,13 @@ svg {
     line-height: 140%;
   }
 
+  .t-title {
+    font-family: "Xanh Mono", monospace;
+    font-size: 1.85rem;
+    line-height: 1.85rem;
+    font-weight: normal;
+  }
+
   .t-body {
     font-family: "Xanh Mono", monospace;
     font-size: 1rem;

@@ -86,18 +86,20 @@
           current way of life. How can we move forward if we can't imagine
           what's next?
         </div>
-        <div class="submit t-body">
-          <div class="submit-space">
-            <div><span class="t-uppercase t-italic">Submit</span></div>
-            <div>
-              <img class="arrow" src="@/assets/arrow.svg" alt="arrow" />
+        <a class="submit-container" href="">
+          <div class="submit t-body">
+            <div class="submit-space">
+              <div><span class="t-uppercase t-italic">Submit</span></div>
+              <div>
+                <img class="arrow" src="@/assets/arrow.svg" alt="arrow" />
+              </div>
+            </div>
+            <div class="exercise-space">
+              <div>an</div>
+              <div><span class="t-uppercase">article</span></div>
             </div>
           </div>
-          <div class="exercise-space">
-            <div>an</div>
-            <div><span class="t-uppercase">article</span></div>
-          </div>
-        </div>
+        </a>
       </div>
       <div class="situations">
         <svg
@@ -275,12 +277,17 @@
   margin-right: 40px;
 }
 
+.submit-container {
+  width: 30%;
+}
+
 .submit {
   background: #e6ff4d;
   color: #1e1a1a;
-  width: 30%;
+  width: 100%;
   display: flex;
   gap: 5%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -486,7 +493,7 @@ Responsive */
 @media only screen and (max-width: 800px) {
   .intro {
     width: 100%;
-    height: calc(100vh - 1.6rem);
+    height: calc(100vh);
     position: fixed;
     background: #1e1a1a;
     padding: 1rem;
@@ -504,6 +511,10 @@ Responsive */
   }
 
   .about {
+    width: 100%;
+  }
+
+  .submit-container {
     width: 100%;
   }
   .submit {
