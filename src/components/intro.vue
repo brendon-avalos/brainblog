@@ -86,7 +86,10 @@
           current way of life. How can we move forward if we can't imagine
           what's next?
         </div>
-        <a class="submit-container" href="">
+        <a
+          class="submit-container"
+          href="mailto:avalos.brendon@gmail.com?subject=Counter Situations Submission"
+        >
           <div class="submit t-body">
             <div class="submit-space">
               <div><span class="t-uppercase t-italic">Submit</span></div>

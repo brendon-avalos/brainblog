@@ -136,6 +136,7 @@ export default {
   &:hover {
     cursor: pointer;
     background-color: #e6ff4d;
+    filter: blur(0rem);
   }
 
   &:hover > .entry-info {
