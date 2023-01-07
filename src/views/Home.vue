@@ -16,14 +16,14 @@
               <div class="entry">
                 <!-- Add to entry for "blog functionality" 
                 @click="$router.push({ name: entry.id })" -->
-                <div class="index t-text">{{ entry.index }}.</div>
+                <!-- <div class="index t-title">{{ entry.index }}</div> -->
                 <div class="entry-info">
-                  <div class="title t-text t-uppercase">
+                  <div class="title t-title t-uppercase">
                     {{ entry.title }}
                   </div>
-                  <div class="author t-text t-italic">
-                    {{ entry.author }}
-                  </div>
+                </div>
+                <div class="author t-caption ">
+                  {{ entry.author }}
                 </div>
                 <div class="excerpt t-caption ">
                   {{ entry.excerpt }}
@@ -129,7 +129,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   gap: 1em;
-  transition: all 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+  transition: all 0.1s cubic-bezier(0.85, 0, 0.15, 1);
   border-bottom: 0.5px solid;
 
   &:hover {
@@ -144,10 +144,7 @@ export default {
 
 .entry-info {
   display: flex;
-  padding-left: 1rem;
   flex-direction: column;
-  max-width: 16rem;
-  min-width: 16rem;
   transition: all 0.8s cubic-bezier(0.85, 0, 0.15, 1);
 }
 
@@ -160,13 +157,17 @@ export default {
 }
 
 .title {
+  max-width: 20rem;
+  min-width: 20rem;
 }
 
 .author {
+  min-width: 6rem;
+  max-width: 6rem;
 }
 
 .excerpt {
-  max-width: 16rem;
+  max-width: 14rem;
 }
 
 // marquee

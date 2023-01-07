@@ -60,8 +60,8 @@ svg {
 
 .t-title {
   font-family: "Xanh Mono", monospace;
-  font-size: 3rem;
-  line-height: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
   font-weight: normal;
 }
 
