@@ -173,7 +173,7 @@
       </div>
       <div class="byline">
         <div class="t-body title">
-          an <span class="t-uppercase t-italic">E-Zine</span> by
+          <span class=" t-italic">curated</span> by
         </div>
         <div class="t-body t-uppercase text">Brendon Avalos</div>
       </div>

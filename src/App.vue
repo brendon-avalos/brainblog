@@ -58,6 +58,13 @@ svg {
   display: inline-block;
 }
 
+.t-title {
+  font-family: "Xanh Mono", monospace;
+  font-size: 3rem;
+  line-height: 1rem;
+  font-weight: normal;
+}
+
 .t-body {
   font-family: "Xanh Mono", monospace;
   font-size: 1.35rem;
@@ -67,8 +74,15 @@ svg {
 
 .t-text {
   font-family: "Xanh Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 01rem;
   line-height: 1.25rem;
+  font-weight: normal;
+}
+
+.t-caption {
+  font-family: "Xanh Mono", monospace;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
   font-weight: normal;
 }
 

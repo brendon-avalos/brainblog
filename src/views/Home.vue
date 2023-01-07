@@ -1,9 +1,6 @@
 <template>
   <div class="home">
     <div>
-      <div class="about">
-        <div class="t-body">Index</div>
-      </div>
       <div class="sections">
         <div
           v-for="(section, index) in Object.keys(entries)"
@@ -19,9 +16,17 @@
               <div class="entry">
                 <!-- Add to entry for "blog functionality" 
                 @click="$router.push({ name: entry.id })" -->
-                <div class="index t-body">[{{ entry.index }}]</div>
-                <div class="headline t-body t-italic">
-                  {{ entry.title }}
+                <div class="index t-text">{{ entry.index }}.</div>
+                <div class="entry-info">
+                  <div class="title t-text t-uppercase">
+                    {{ entry.title }}
+                  </div>
+                  <div class="author t-text t-italic">
+                    {{ entry.author }}
+                  </div>
+                </div>
+                <div class="excerpt t-caption ">
+                  {{ entry.excerpt }}
                 </div>
               </div>
             </a>
@@ -86,33 +91,21 @@ export default {
   align-items: flex-end;
 }
 
-.colophon {
-  position: fixed;
-  background: #e6ff4d;
-  color: #1e1a1a;
-  bottom: -20rem;
-  right: 0rem;
-  padding: 2rem 10rem 10rem 10rem;
-  width: 50vw;
-  text-align: center;
-  display: none;
-  min-height: 20vh;
-  gap: 4rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 50% / 50%;
-  box-sizing: border-box;
-}
-
 .home {
   width: 50%;
   box-sizing: border-box;
   float: right;
-  background-color: #e6ff4d;
+  background-color: #ffffff;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  background-image: url(../assets/background.svg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat, repeat;
+  background-position: bottom right;
+  padding-bottom: 4rem;
 }
 
 .sections {
@@ -132,32 +125,48 @@ export default {
 
 .entry {
   display: flex;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 1em;
   transition: all 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+  border-bottom: 0.5px solid;
 
   &:hover {
-    padding-left: 5rem;
     cursor: pointer;
+    background-color: #e6ff4d;
+  }
+
+  &:hover > .entry-info {
+    // padding-left: 6rem;
   }
 }
 
+.entry-info {
+  display: flex;
+  padding-left: 1rem;
+  flex-direction: column;
+  max-width: 16rem;
+  min-width: 16rem;
+  transition: all 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
 .section:nth-child(even) {
-  background: #f4f4f4;
+  // background: rgb(242, 242, 242);
 }
 
 .section:nth-child(odd) {
-  background: #fff;
+  // background: #fff;
 }
 
-.footer {
-  display: none;
-  position: fixed;
-  left: 50%;
-  width: 50%;
-  background: #d9cfc1;
-  box-sizing: border-box;
-  padding: 1rem;
+.title {
+}
+
+.author {
+}
+
+.excerpt {
+  max-width: 16rem;
 }
 
 // marquee
@@ -174,10 +183,10 @@ export default {
 }
 
 .marquee {
-  background: #e6ff4d;
+  background: #dfbfff;
   overflow: hidden;
   position: fixed;
-  bottom: 0.5rem;
+  bottom: 0rem;
   height: auto;
 }
 
@@ -198,7 +207,6 @@ export default {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: #e6ff4d;
     margin-top: calc(100vh - 1.6rem);
     justify-content: space-between;
   }
