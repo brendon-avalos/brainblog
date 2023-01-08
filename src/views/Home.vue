@@ -138,7 +138,7 @@ export default {
   min-height: 15rem;
 
   &:hover {
-    cursor: cursor;
+    cursor: pointer;
     background-color: #e6ff4d;
     filter: blur(0rem);
   }
