@@ -37,9 +37,13 @@
 
     <div class="marquee">
       <div class="marquee-text t-text">
-        "Counter Situations" uses Xanh Mono by Yellow Type Foundry & Feeeels
-        Fuzzy by Jack Fahnestock. This site was designed and developed by
-        Brendon Avalos & based off a vue blog using markdown by Joseph Harvey
+        "Counter Situations" uses Xanh Mono by
+        <a href="https://github.com/yellow-type-foundry" target="_blank"
+          >Yellow Type Foundry</a
+        >
+        & Feeeels Fuzzy by
+        <a href="https://jckfa.com/" target="_blank">Jack Fahnestock</a>. This
+        site was developed using a vue blog using markdown by Joseph Harvey
         Angeles.
       </div>
     </div>
