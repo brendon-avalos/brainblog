@@ -1,88 +1,103 @@
 {
- 
   "recent": [
     {
+      "id": "data-determinism",
+      "title": "Afrofuturism & the Myth of Drexciya",
+      "author": "Ivar",
+      "link": "https://vimeo.com/313823024",
+      "excerpt": "A video about the electronic artists Drexciya and how they channeled a futuristic vision into their music."
+    },
+
+
+
+    {
+      "id": "data-determinism",
+      "title": "The Political Tragedy of Data-Driven-Determinism",
+      "author": "Mushon Zer-Aviv",
+      "link": "https://www.youtube.com/watch?v=GX4jw-t7-vw&ab_channel=re%3Apublica",
+      "excerpt": "Using data and statistics as guiding forces of our future inherently lead to repeating the past."
+    },
+
+    {
       "id": "derive",
-      "index": "01",
       "title": "Theory of the Dérive",
       "author": "Guy Debord",
       "link": "https://www.cddc.vt.edu/sionline/si/theory.html",
-      "excerpt":"The practice of rapidly passing through various spaces at a rapid pace to envoke a new relationship to your surroundings."
-     
-     
+      "excerpt": "The practice of rapidly passing through various spaces at a rapid pace to envoke a new relationship to your surroundings."
     },
-    
+
+    {
+      "id": "computer-lib",
+      "title": "Computer Lib/Dream Machine",
+      "author": "Ted Nelson",
+      "link": "https://en.wikipedia.org/wiki/Computer_Lib/Dream_Machines",
+      "excerpt": "A foundational book for hackers based on the idea of freedom through technology."
+    },
+
     {
       "id": "justice-harlem",
-      "index": "02",
       "title": "Place, Emotion, and Enviromental Justice in Harlem",
       "author": "Cheryl J. Fish",
       "link": "http://s3.amazonaws.com/arena-attachments/2397578/dc67d37c83d910d2f027d855f42805a8.pdf?1530916557",
-      "excerpt":"An essay focusing on June Jordan's and Buckminster Fuller's plan to redesign Harlem."
-     
-     
+      "excerpt": "An essay focusing on June Jordan's and Buckminster Fuller's plan to redesign Harlem."
     },
-    
 
     {
       "id": "common-task",
-      "index": "03",
       "title": "Common Task",
       "author": "Cynium",
       "link": "https://commontask.io/",
-      "excerpt":"A website devoted to utopian visions of the future."
+      "excerpt": "A website devoted to utopian visions of the future."
     },
+
+    {
+      "id": "post-western",
+      "title": "The future is post-Western",
+      "author": "Yannick Giovanni Marshall",
+      "link": "https://www.aljazeera.com/opinions/2022/5/20/the-future-is-post-western",
+      "excerpt": "An essay criticising the colonial nature of the 'West' and what it offers is more suffering."
+    },
+
+
+    {
+      "id": "mountain-soul",
+      "title": "Do Mountains Have Souls?",
+      "author": "Justine Quijada",
+      "link": "https://www.sapiens.org/culture/new-animism/",
+      "excerpt": "An article about animism and how we can use the thoughts of interconnectedness to help us see the world differently.."
+    },
+
+
     {
       "id": "half earth",
-      "index": "04",
       "title": "Half Earth Socialism",
       "author": "Drew Pendergrass & Troy Vettese",
       "link": "https://www.half.earth/",
-      "excerpt":"A book and game that confront the very real changes we need to make to continue habitating this planet."
+      "excerpt": "A book and game that confront the very real changes we need to make to continue habitating this planet."
     },
-
 
     {
       "id": "optimists",
-      "index": "05",
       "title": "Optimists of the Future Past Perfect",
       "author": "Arseny Zhilyaev",
       "link": "https://www.e-flux.com/journal/88/172829/optimists-of-the-future-past-perfect/",
-      "excerpt":"Using the basis of cosmism to see past our own political straightjacket."
+      "excerpt": "Using the basis of cosmism to see past our own political straightjacket."
     },
-
-
 
     {
       "id": "speculating",
-      "index": "06",
       "title": "Speculating Futures",
       "author": "Francis Tseng",
       "link": "http://speculatingfutures.club/",
-      "excerpt":"A comprehensive reading list composed of speculative fiction and showcases the strengths and weaknesses of these visions."
+      "excerpt": "A comprehensive reading list composed of speculative fiction and showcases the strengths and weaknesses of these visions."
     },
-
 
     {
       "id": "worker",
-      "index": "07",
       "title": "The Mind Is More Than A Machine",
       "author": "Bobby Azarian",
       "link": "https://www.noemamag.com/the-mind-is-more-than-a-machine/",
-      "excerpt":"Let's stop pretending that a human is the same thing as a complex computer."
+      "excerpt": "Let's stop pretending that a human is the same thing as a complex computer."
     }
-
-
-    
-
-
-
-
-
-    
-    
-    
-
-
   ]
 }
