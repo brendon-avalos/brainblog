@@ -178,7 +178,7 @@
       </div>
       <div class="byline">
         <div class="t-body title">
-          <span class=" t-italic">curated</span> by
+          <span class=" t-italic">created</span> by
         </div>
         <div class="t-body t-uppercase text">Brendon Avalos</div>
       </div>
