@@ -81,10 +81,9 @@
       <div class="info">
         <div class="about t-text">
           <span class="t-uppercase t-italic t-body about-margin">About</span>
-          "Counter Situations" is a collection of essays, articles & experiments
-          that aim to inspire and help us reimagine and recontextualize our
-          current way of life. How can we move forward if we can't imagine
-          what's next?
+          "Counter Situations" is a collection of essays, articles, and
+          experiments that aim to inspire us to help recontextualize our current
+          way of life. How can we move forward if we can't imagine what's next?
         </div>
         <a
           class="submit-container"
