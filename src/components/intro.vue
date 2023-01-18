@@ -21,7 +21,7 @@
         </div>
         <svg
           width="693"
-          height="277"
+          height="0"
           viewBox="0 0 693 277"
           fill="none"
           class="counter-svg"
@@ -107,7 +107,7 @@
         <svg
           class="situations-svg"
           width="682"
-          height="329"
+          height="0"
           viewBox="0 0 682 329"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -203,12 +203,10 @@
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
   gap: 1%;
-  box-sizing: border-box;
 }
 
 .header {
@@ -221,12 +219,12 @@
   flex-grow: 1;
   width: 100%;
   overflow: visible;
+  height: 100%;
 }
 
 .counter-svg {
-  height: 0;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: visible;
 }
 
@@ -323,13 +321,13 @@
   flex-grow: 1;
   width: 100%;
   overflow: visible;
+  height: auto;
 }
 
 .situations-svg {
-  height: 0;
   width: 100%;
-  min-height: 100%;
   overflow: visible;
+  height: 100%;
 }
 
 .byline {
