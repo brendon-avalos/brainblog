@@ -321,7 +321,7 @@
   flex-grow: 1;
   width: 100%;
   overflow: visible;
-  height: auto;
+  height: 100%;
 }
 
 .situations-svg {
